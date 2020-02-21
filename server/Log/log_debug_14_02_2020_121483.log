@@ -1,0 +1,61 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('rahul@gmail.com') OR contact_number in('7889966554')
+insertEmployee sql 
+ insert into employee_master(
+                    status,
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    '1',
+                    'rahul',
+                    'rahul@gmail.com',
+                    'rahul@rkwebtechnology.com',
+                    '123456',
+                    'Rajkot',
+                    'Rajkot',
+                    '7889966554',
+                    '7016231822',
+                    NULL,
+                    3,
+                    '2'
+                )
+users sql 
+ 
+userres
+registerUsers sql --------------->  insert into users_master(
+                                                            email_id
+                                                            ) values (
+                                                             'rahul@gmail.com'
+                                                            )
+enterd in create login
+createLogin sql ---------------> insert into user_master(
+                    email_id,
+                    password,
+                    first_name,
+                    mobile_no,
+                    status,
+                    user_role_id,
+                    secret_key
+                ) values (
+                    'rahul@gmail.com',
+                    '$2a$05$WHbORSErwPcLvdMIgl8al.1BQpNKgGROwlED/Wb7Rp/YDqcXJwkgu',
+                    'rahul',
+                    '7889966554',
+                    '1',
+                    '3',
+                    'bnVsbF9yYWh1bEBnbWFpbC5jb20='
+                )
+row1

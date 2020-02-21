@@ -1,0 +1,8 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+file
+requested_plain_url ==>    /Employee/removeEmployeeIcon
+required check ------------------------->  false
+file_path =================> null

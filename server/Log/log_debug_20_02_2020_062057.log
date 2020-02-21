@@ -1,0 +1,19 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:F61X1YktDoHK6FNEAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/p2JK3F.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:XL_uq1Essrsl5xStAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:Z0NqzxirbdYqkIFsAAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

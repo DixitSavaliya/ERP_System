@@ -1,0 +1,2 @@
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 14:46:52:849, ' Request_Type ' POST, ' Request_URL ' /Employee/uploadEmployeeIcon, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 55, ' Response_Time ' 2.668 ms,
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 14:47:18:146, ' Request_Type ' POST, ' Request_URL ' /Employee/uploadEmployeeIcon, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 55, ' Response_Time ' 0.428 ms,

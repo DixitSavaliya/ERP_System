@@ -1,0 +1,3 @@
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 14:23:39:477, ' Request_Type ' POST, ' Request_URL ' /Employee/searchEmployeeData, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 949, ' Response_Time ' 10.544 ms,
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 14:23:48:826, ' Request_Type ' POST, ' Request_URL ' /Employee/searchEmployeeData, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 362, ' Response_Time ' 2.558 ms,
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 14:33:57:745, ' Request_Type ' POST, ' Request_URL ' /Employee/uploadEmployeeIcon, ' HTTP_Version ' 1.1, ' Response_Code ' 404, ' Content_Length ' 167, ' Response_Time ' 2.671 ms,

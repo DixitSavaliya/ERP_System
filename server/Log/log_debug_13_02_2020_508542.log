@@ -1,0 +1,51 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:mfNQzyl5RLzAIWtEAAAB
+requested_plain_url ==>    /User/zolUD1.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '36' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '36' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/changePassword
+required check ------------------------->  false
+changePassword sql 
+ select 
+                        um.password, 
+                        concat_ws(' ', um.first_name, um.last_name) as user,
+                        um.username, 
+                        um.email_id,
+                        um.mobile_no, 
+                        um.id as id
+                    from user_master as um
+                    left join user_role as ur on ur.id = um.user_role_id 
+                    where binary um.username = 'ruchit@gmail.com' or um.email_id = 'ruchit@gmail.com'
+                        and um.id = 36 
+                        and um.status = 1

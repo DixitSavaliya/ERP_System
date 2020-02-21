@@ -1,0 +1,235 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+                            um.*, 
+                            ur.id as user_role_id, 
+                            ur.name as user_role,
+                            um.status 
+                        from user_master as um  
+                        left join user_role as ur on ur.id = um.user_role_id 
+                        where BINARY um.username ='adNetwork' or BINARY um.email_id ='adNetwork' 
+                        and BINARY um.user_group = 'admin' group by um.id limit 1
+expire in =>  1042  seconds
+expire in =>  1042  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-11') as today_count
+                    from application_master as am
+                    where am.user_id = '2' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    if(um.user_group = 'admin_staff', sm.id , null) as type_id,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join staff_master as sm on sm.id = um.user_group_id 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 2 and um.status = 1 group by um.id
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRight
+required check ------------------------->  false
+countUserRight sql  
+
+select count(id) as count from user_right
+requested_plain_url ==>    /UserRole/getUserRightDetailsPg
+required check ------------------------->  false
+getUserRightDetailsPg sql  
+
+ select 
+                        id,
+                        display_name,
+                        group_display_name,
+                        group_name,
+                        modify_date,
+                        name,
+                        status
+                    from user_right 
+                    order by name  limit 0 , 5
+requested_plain_url ==>    /UserRole/registerUserRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRight
+required check ------------------------->  false
+countUserRight sql  
+
+select count(id) as count from user_right
+requested_plain_url ==>    /UserRole/getUserRightDetailsPg
+required check ------------------------->  false
+getUserRightDetailsPg sql  
+
+ select 
+                        id,
+                        display_name,
+                        group_display_name,
+                        group_name,
+                        modify_date,
+                        name,
+                        status
+                    from user_right 
+                    order by name  limit 0 , 5
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/countUserRight
+required check ------------------------->  false
+countUserRight sql  
+
+select count(id) as count from user_right
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRightDetailsPg
+required check ------------------------->  false
+getUserRightDetailsPg sql  
+
+ select 
+                        id,
+                        display_name,
+                        group_display_name,
+                        group_name,
+                        modify_date,
+                        name,
+                        status
+                    from user_right 
+                    order by name  limit 0 , 5
+Delete  SocketId:FX77I1bxWlZHKngpAAAA
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+Delete  SocketId:YQAjLPiVsX1XidgvAAAB
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+Delete  SocketId:kkvARBdjHHC9LAl3AAAC
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+Delete  SocketId:am_7q-B82O5QTa-tAAAD
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 3
+                    limit 1
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+Delete  SocketId:_tpQvhje75VcO6mlAAAE
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+Delete  SocketId:RyEYjJKVij8hYqjuAAAF
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+Delete  SocketId:q0X1cJ_8wfh9XKQnAAAG
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+Delete  SocketId:YNvirNjwJl1NQkSVAAAH
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+Delete  SocketId:OAPjhAhtPmS6mx39AAAI
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:mK8rUAqEXPMZbEDwAAAJ

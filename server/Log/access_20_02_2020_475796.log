@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 20-02-2020 18:10:36:924, ' Request_Type ' GET, ' Request_URL ' /User/wddUpq.jpeg, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 4992, ' Response_Time ' 6.056 ms,
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 20-02-2020 18:10:41:442, ' Request_Type ' POST, ' Request_URL ' /Employee/createDocumentImage, ' HTTP_Version ' 1.1, ' Response_Code ' 404, ' Content_Length ' 168, ' Response_Time ' 1.345 ms,

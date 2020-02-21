@@ -1,0 +1,2 @@
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 15:52:02:609, ' Request_Type ' POST, ' Request_URL ' /Employee/registerEmployee, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 95, ' Response_Time ' 13.065 ms,
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 15:52:18:182, ' Request_Type ' POST, ' Request_URL ' /Employee/registerEmployee, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 95, ' Response_Time ' 2.051 ms,

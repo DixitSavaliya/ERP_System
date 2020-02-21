@@ -1,0 +1,76 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:OmQwxLh794SFr9raAAAB
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '2' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('ruchit@gmail.com') OR contact_number in('1234567891')
+insertEmployee sql 
+ insert into employee_master(
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    'ruchit',
+                    'ruchit@gmail.com',
+                    'ruchit123@gmail.com',
+                    '123456',
+                    'Rajkot',
+                    'Rajkot',
+                    '1234567891',
+                    '8989898989',
+                    NULL,
+                    6,
+                    '2'
+                )
+users sql 
+ 
+userres
+registerUsers sql --------------->  insert into users_master(
+                                                            email_id
+                                                            ) values (
+                                                             'ruchit@gmail.com'
+                                                            )
+enterd in create login
+createLogin sql ---------------> insert into user_master(
+                    email_id,
+                    password,
+                    first_name,
+                    mobile_no,
+                    user_role_id,
+                    secret_key
+                ) values (
+                    'ruchit@gmail.com',
+                    '$2a$05$OcPjrX15SyrILyXYGtFjJu8UkQDzohnj2.Y88CmqDEkWBxv/53Zsu',
+                    'ruchit',
+                    'undefined',
+                    '6',
+                    'bnVsbF9ydWNoaXRAZ21haWwuY29t'
+                )
+row1

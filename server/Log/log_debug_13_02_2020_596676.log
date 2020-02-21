@@ -1,0 +1,196 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:CX3WsuT5PClr74wNAAAB
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='ruchit@gmail.com' or BINARY um.email_id ='ruchit@gmail.com'
+redis_obj stored
+{ id: 36,
+  secret_key: 'bnVsbF9ydWNoaXRAZ21haWwuY29t',
+  username: '',
+  user_email: 'ruchit@gmail.com',
+  access_token: 'WuGk3BEHeJYylPX6}Mhd7XgnR6GR8VXd',
+  refresh_token: 'OVZX2ipUwhC4N1OY$l69Yk9BOTiA8yzR',
+  expire_time: '2020-02-13 16:08:08',
+  server_time: '2020-02-13 14:28:27',
+  updated_at: '2020-02-13 14:28:27',
+  user_group: undefined,
+  user_group_id: undefined }
+expire in =>  5921  seconds
+expire in =>  5921  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '36' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 36
+requested_plain_url ==>    /User/zolUD1.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 36
+requested_plain_url ==>    /User/changePassword
+required check ------------------------->  false
+changePassword sql 
+ select 
+                        um.password, 
+                        concat_ws(' ', um.first_name, um.last_name) as user,
+                        um.username, 
+                        um.email_id,
+                        um.mobile_no, 
+                        um.id as id
+                    from user_master as um
+                    left join user_role as ur on ur.id = um.user_role_id 
+                    where binary um.username = 'ruchit@gmail.com' or um.email_id = 'ruchit@gmail.com'
+                        and um.id = 36
+error
+null
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='ruchit@gmail.com' or BINARY um.email_id ='ruchit@gmail.com'
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='ruchit@gmail.com' or BINARY um.email_id ='ruchit@gmail.com'
+redis_obj stored
+{ id: 36,
+  secret_key: 'bnVsbF9ydWNoaXRAZ21haWwuY29t',
+  username: '',
+  user_email: 'ruchit@gmail.com',
+  access_token: 'WuGk3BEHeJYylPX6}Mhd7XgnR6GR8VXd',
+  refresh_token: 'OVZX2ipUwhC4N1OY$l69Yk9BOTiA8yzR',
+  expire_time: '2020-02-13 16:08:08',
+  server_time: '2020-02-13 14:29:12',
+  updated_at: '2020-02-13 14:29:12',
+  user_group: undefined,
+  user_group_id: undefined }
+expire in =>  5876  seconds
+expire in =>  5876  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '36' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 36
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /User/changePassword
+required check ------------------------->  false
+changePassword sql 
+ select 
+                        um.password, 
+                        concat_ws(' ', um.first_name, um.last_name) as user,
+                        um.username, 
+                        um.email_id,
+                        um.mobile_no, 
+                        um.id as id
+                    from user_master as um
+                    left join user_role as ur on ur.id = um.user_role_id 
+                    where binary um.username = 'ruchit@gmail.com' or um.email_id = 'ruchit@gmail.com'
+                        and um.id = 36
+error
+null
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '36' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 36
+requested_plain_url ==>    /User/updateUserDetailsById
+required check ------------------------->  false
+hasString --------------------> 36_null_null_6
+user.secret_key --------------------> MzZfbnVsbF9udWxsXzY=

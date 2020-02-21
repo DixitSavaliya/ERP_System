@@ -1,0 +1,167 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:i5PqqrjY4alXPOx7AAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1bTUdr.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/QslTNM.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/iKJjwZ.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/p4IAh7.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1RMXWW.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/SuasPG.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/adI2vF.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/ftJewE.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/yjYXXK.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/iKJjwZ.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/SuasPG.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/adI2vF.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/yjYXXK.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/SuasPG.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/getDocumentById
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from document_master as c 
+                    where 
+                        c.employee_id= 31
+                    limit 1
+requested_plain_url ==>    /Document/ooz3zs.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/8pesKY.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:A6IhPUX49nhdG07UAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/yjYXXK.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/getDocumentById
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from document_master as c 
+                    where 
+                        c.employee_id= 35
+                    limit 1
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/tlI6tA.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/LN26u2.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/Wj531A.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/rg5Lao.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/tMRFud.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/gDgH1k.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/2uGaIy.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/P9w2ch.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocument
+required check ------------------------->  false
+createDocument sql ---------------> insert into document_master(
+        adhar_card_front,
+        adhar_card_back,
+        pan_card,
+        passport_photo,
+        passport,
+        leaving_letter,
+        original_certificate,
+        bank_statement,
+        employee_id
+    ) values (
+        'Document/tlI6tA.jpeg',
+        'Document/LN26u2.jpeg',
+        'Document/Wj531A.jpeg',
+        'Document/rg5Lao.jpeg',
+        'Document/tMRFud.jpg',
+        'Document/gDgH1k.jpeg',
+        'Document/2uGaIy.jpg',
+        'Document/P9w2ch.jpg',
+        '35'
+    )
+Delete  SocketId:eLFp4QAbArfu1tW8AAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

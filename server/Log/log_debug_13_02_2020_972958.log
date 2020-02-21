@@ -1,0 +1,223 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('vivek@gmail.com') OR contact_number in('8989895656')
+insertEmployee sql 
+ insert into employee_master(
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    'vivek',
+                    'vivek@gmail.com',
+                    'vivek123@gmail.com',
+                    '123456',
+                    'Rajkot',
+                    'Rajkot',
+                    '8989895656',
+                    '8989898989',
+                    NULL,
+                    3,
+                    '6'
+                )
+users sql 
+ 
+userres
+registerUsers sql --------------->  insert into users_master(
+                                                            email_id
+                                                            ) values (
+                                                             'vivek@gmail.com'
+                                                            )
+enterd in create login
+createLogin sql ---------------> insert into user_master(
+                    email_id,
+                    password,
+                    user_role_id,
+                    secret_key
+                ) values (
+                    'vivek@gmail.com',
+                    '$2a$05$kknoSxSm.CuOSd0rHfZaluP0y2uMoH9Cz8a9RXxoWJtp1M4bBMsmy',
+                    '3',
+                    'bnVsbF92aXZla0BnbWFpbC5jb20='
+                )
+row1
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='adNetwork' or BINARY um.email_id ='adNetwork'
+a[c] ------> (
+salt ----------------------------------> b.join('')9bRwPYhHLsF1GqLC(JFhKfK0dnowMtpq
+_updateTokenDetails sql ============> 	
+ update user_master set  
+                    access_token = "9bRwPYhHLsF1GqLC(JFhKfK0dnowMtpq",
+                    refresh_token = "wIWyBkiXCWm8Xt0h{Pk7hb83HOmimuws",
+                    expire_time = "2020-02-13 13:54:23"
+                    where id = 2
+redis_obj stored
+{ id: 2,
+  secret_key: 'Ml9hZG1pbl9udWxsXzE=',
+  username: 'adNetwork',
+  user_email: 'dixit20051998@gmail.com',
+  access_token: '9bRwPYhHLsF1GqLC(JFhKfK0dnowMtpq',
+  refresh_token: 'wIWyBkiXCWm8Xt0h{Pk7hb83HOmimuws',
+  expire_time: '2020-02-13 13:54:23',
+  server_time: '2020-02-13 11:54:23',
+  updated_at: '2020-02-13 11:54:23',
+  user_group: undefined,
+  user_group_id: undefined }
+expire in =>  7140  seconds
+expire in =>  7140  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '2' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join staff_master as sm on sm.id = um.user_group_id 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 2 and um.status = 1 group by um.id
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+Delete  SocketId:C5LeBFD3MDfRmSDOAAAB
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '2' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+Delete  SocketId:xDNjpuwNwM_VsXyCAAAC
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+Delete  SocketId:-cQJack6KL_oaRJ8AAAD
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+Delete  SocketId:4K6Snht0FtqPe_oHAAAE
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/countUserRole
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleDetailsPg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+Delete  SocketId:_Y7FYcWRsnM-C2Q5AAAF
+requested_plain_url ==>    /User/sKHhyg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRole
+required check ------------------------->  false
+getUserRole sql ===> select ur.* from user_role as ur 
+requested_plain_url ==>    /UserRole/getUserRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+Delete  SocketId:4ZYVIDmEDoLJAurTAAAA

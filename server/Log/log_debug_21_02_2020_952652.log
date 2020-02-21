@@ -1,0 +1,10 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Document/removeDocumentImage
+required check ------------------------->  false
+file_path =================> Document/KWUpHe.jpeg
+null
+Delete  SocketId:htONKvcBD48Rx9RyAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

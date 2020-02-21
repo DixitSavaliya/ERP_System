@@ -1,0 +1,187 @@
+body {
+	font-family: 'Poppins', sans-serif;	
+    background-color: #F4F3EF !important;
+}
+
+/*-- Start Employee Details--*/
+.welcome_list {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.welcome_list h1 {
+    font-weight:bold;
+    font-size:32px;
+    color: #152d53;
+    margin-bottom: 40px; 
+    margin-top: 40px;
+}
+.back {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.back .btn {
+    text-decoration: none;
+    background-color: #152d53;
+    border:2px solid #152d53;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.back .btn:hover {
+    background: #152d53;
+    color: #fff !important;
+    border: 2px solid #152d53 !important;
+    outline: none;
+}
+.back .btn.focus, .btn:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+.employee_details_bg {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    padding:15px;
+}
+.emp_details_bg {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    padding: 15px;
+}
+.profile_picture {
+    position: absolute !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.emp_details_main {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.profile_picture img {
+    width: 220px;
+    height: auto;
+    border-radius: 5px;
+}
+.emp_details_bg {
+    width: 100%;
+    padding-right: 15px;
+}
+.emp_details_view {
+    padding-bottom: 30px;
+}
+.emp_details_view h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #152d53;
+    letter-spacing: 1px;
+}
+.emp_details_view h6 {
+    color: #a7a7a7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/*-- End Employee_Details--*/
+
+@media(max-width: 1600px){
+    .profile_picture img {
+        width: 150px;
+    }
+}
+@media(max-width: 1200px){
+    .welcome_list {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .emp_details_bg {
+        margin-right: -5px !important;
+    }
+    .profile_picture img {
+        width: 127px;
+    }
+    .emp_details_main {
+        padding-right: 15px !important;
+    }
+}
+@media(max-width: 992px) {
+	.welcome_list {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .profile_picture img {
+        width: 110px;
+    }
+    .back {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .employee_details_bg {
+        margin-bottom: 20px;
+    }
+    .emp_details_main {
+        margin-right: 5px;
+    }
+    .emp_details_view {
+        padding-left: 20px !important;
+        padding-right: -1px !important;
+    }
+    .media-m {
+        margin: 0px !important;
+    }
+} 
+@media(max-width: 768px) {
+    .welcome_list h1  {
+        font-size: 26px;
+        margin: 0 auto;
+        padding: 25px 15px;
+        text-align: center;
+    }
+    .employee_details_bg {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+    .emp_details_bg {
+        padding: 15px 15px 0px 15px;
+    }
+    .profile_picture {
+        position: relative !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .emp_details_view {
+        padding-left: 15px !important;
+        padding-bottom: 15px;
+    }
+    .emp_details_main {
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .emp_details_bg {
+        margin-right: 0px !important;
+    }
+    .media-m {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+    .back {
+        text-align: center;
+    }
+}	
+@media(max-width: 568px) {
+    
+}	

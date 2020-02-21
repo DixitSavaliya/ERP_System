@@ -1,0 +1,15 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:ZXTLe8aKJRWnVz_hAAAA
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='dixit20051998@gmail.com' or BINARY um.email_id ='dixit20051998@gmail.com'
+password == hash: 

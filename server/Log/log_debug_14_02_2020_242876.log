@@ -1,0 +1,36 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('rahul@gmail.com') OR contact_number in('7889966554')
+insertEmployee sql 
+ insert into employee_master(
+                    status,
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    'null',
+                    'rahul',
+                    'rahul@gmail.com',
+                    'rahul@rkwebtechnology.com',
+                    '123456',
+                    'Rajkot',
+                    'Rajkot',
+                    '7889966554',
+                    '7016231822',
+                    NULL,
+                    3,
+                    '2'
+                )
+users sql 
+ 

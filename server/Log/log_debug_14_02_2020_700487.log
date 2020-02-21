@@ -1,0 +1,69 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('megh@gmail.com') OR contact_number in('7878585854')
+insertEmployee sql 
+ insert into employee_master(
+                    status,
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    '1',
+                    'megh',
+                    'megh@gmail.com',
+                    'megh123@gmail.com',
+                    '123456',
+                    'Rajkot',
+                    'Rajkot',
+                    '7878585854',
+                    '7016231822',
+                    NULL,
+                    4,
+                    '2'
+                )
+users sql 
+ 
+userres
+registerUsers sql ---------------> insert into users_master(
+                                                            status,
+                                                            user_type,
+                                                            first_name,
+                                                            email_id,
+                                                            mobile_no
+                                                            ) values (
+                                                            '1',
+                                                            '4',
+                                                            'megh',
+                                                            'megh@gmail.com',
+                                                            '7878585854'
+                                                            )
+enterd in create login
+createLogin sql ---------------> insert into user_master(
+                    email_id,
+                    password,
+                    first_name,
+                    mobile_no,
+                    status,
+                    user_role_id,
+                    secret_key
+                ) values (
+                    'megh@gmail.com',
+                    '$2a$05$IosJ.6LiShwZUlSojraC5.X.vFV7pJxtmYuRaFITaHY9yKZ/ZRtpG',
+                    'megh',
+                    '7878585854',
+                    '1',
+                    '4',
+                    'bnVsbF9tZWdoQGdtYWlsLmNvbQ=='
+                )
+row1

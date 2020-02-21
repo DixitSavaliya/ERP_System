@@ -1,0 +1,255 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:jgJfG6cEPNOhbI_NAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1bTUdr.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/QslTNM.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/rdyqRU.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/6wbjgF.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/9jR1QU.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/YkkNGx.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/cPksxD.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/GnfBWf.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/GLq44E.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/PMmTf6.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocument
+required check ------------------------->  false
+createDocument sql ---------------> insert into document_master(
+        adhar_card_front,
+        adhar_card_back,
+        pan_card,
+        passport_photo,
+        passport,
+        leaving_letter,
+        original_certificate,
+        bank_statement,
+        employee_id
+    ) values (
+        'Document/rdyqRU.jpeg',
+        'Document/6wbjgF.jpeg',
+        'Document/9jR1QU.jpeg',
+        'Document/YkkNGx.jpeg',
+        'Document/cPksxD.jpeg',
+        'Document/GnfBWf.jpeg',
+        'Document/GLq44E.jpeg',
+        'Document/PMmTf6.jpeg',
+        '3'
+    )
+Delete  SocketId:S3xrjA2xyR1P9AoYAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/P9sEle.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:Fhe5eYs0rvgC-_pyAAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:E8FTaeYs68KjwR17AAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/oIcyGg.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-20') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-20') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/EfV8Xh.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-20') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:uvLWhXLdrNfiVg2WAAAE
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-20') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/i72Fs9.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/rYbUvy.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/o4JXtP.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1bTUdr.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/QslTNM.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+Delete  SocketId:-qrfC6QuBAbTVt1LAAAF
+Delete  SocketId:g_OmoB5eyHPC8OnNAAAG
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:H7mnFnGJKQbE0akZAAAH
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:MVtcWhzrJ23KNb8nAAAI
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/rEpHhL.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:7AeZP1RSv4MBgrOBAAAJ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:J5mS21-pcN9RsaMhAAAK
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Document/createDocumentImage
+required check ------------------------->  false
+requested_plain_url ==>    /Document/v6s0Qx.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:ytjI7LqrHDvYYRdtAAAL
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

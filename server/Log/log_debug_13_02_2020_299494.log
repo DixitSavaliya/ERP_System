@@ -1,0 +1,55 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('mohit@gmail.com') OR contact_number in('7897891423')
+insertEmployee sql 
+ insert into employee_master(
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    'mohit',
+                    'mohit@gmail.com',
+                    'mohit123@gmail.com',
+                    '123456',
+                    'Rajkot',
+                    'Rajkot',
+                    '7897891423',
+                    '8989898989',
+                    NULL,
+                    6,
+                    '2'
+                )
+users sql 
+ 
+userres
+registerUsers sql --------------->  insert into users_master(
+                                                            email_id
+                                                            ) values (
+                                                             'mohit@gmail.com'
+                                                            )
+enterd in create login
+createLogin sql ---------------> insert into user_master(
+                    first_name
+                    email_id,
+                    password,
+                    user_role_id,
+                    secret_key
+                ) values (
+                    'mohit',
+                    'mohit@gmail.com',
+                    '$2a$05$7xEwfCCKzzDZedy9qknAUOCqG88M6FOxLB//KNcgfZtySVNk5Fs1C',
+                    '6',
+                    'bnVsbF9tb2hpdEBnbWFpbC5jb20='
+                )
+row1

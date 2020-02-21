@@ -1,0 +1,17 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Document/updateDocument
+required check ------------------------->  false
+updateDocument sql 
+
+update document_master set 
+                        adhar_card_front = 'Document/ooz3zs.jpg',
+                        adhar_card_back = 'Document/ooz3zs.jpg',
+                        pan_card = 'Document/ooz3zs.jpg',
+                        passport_photo = 'Document/8pesKY.jpeg',
+                        passport = 'Document/8pesKY.jpeg',
+                        leaving_letter = 'Document/8pesKY.jpeg',
+                        original_certificate = 'Document/8pesKY.jpeg ',
+                        bank_statement = 'Document/8pesKY.jpeg',
+                        employee_id = '31'
+                    where id = 1

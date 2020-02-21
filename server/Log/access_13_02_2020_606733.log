@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.114, ' Request_User ' -, ' Request_Date_Time ' 13-02-2020 14:32:13:528, ' Request_Type ' GET, ' Request_URL ' /User/zolUD1.jpeg, ' HTTP_Version ' 1.1, ' Response_Code ' 304, ' Content_Length ' -, ' Response_Time ' 4.783 ms,
+' Request_From_IP ' ::ffff:192.168.1.114, ' Request_User ' -, ' Request_Date_Time ' 13-02-2020 14:32:13:697, ' Request_Type ' POST, ' Request_URL ' /User/currentUser, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 362, ' Response_Time ' 16.096 ms,

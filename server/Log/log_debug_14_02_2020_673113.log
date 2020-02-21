@@ -1,0 +1,25 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Document/createDocument
+required check ------------------------->  false
+createDocument sql ---------------> insert into document_master(
+        adhar_card_front,
+        adhar_card_back,
+        pan_card,
+        passport_photo,
+        passport,
+        leaving_letter,
+        original_certificate,
+        bank_statement,
+        employee_id
+    ) values (
+         Document/8pesKY.jpeg,
+         Document/8pesKY.jpeg,
+         Document/8pesKY.jpeg,
+        ' Document/8pesKY.jpeg',
+        ' Document/8pesKY.jpeg',
+        ' Document/8pesKY.jpeg',
+        ' Document/8pesKY.jpeg ',
+        ' Document/8pesKY.jpeg',
+        '31'
+    )

@@ -1,0 +1,65 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='vivek@gmail.com' or BINARY um.email_id ='vivek@gmail.com'
+a[c] ------> $
+salt ----------------------------------> b.join('')584tcIk7YAb9x6O1$N04vLcYjfqC9o4O
+a[c] ------> (
+salt ----------------------------------> b.join('')AIPTCVWIr9rDnw3T(HJPHgn86C8rSvuL
+_updateTokenDetails sql ============> 	
+ update user_master set  
+                    access_token = "584tcIk7YAb9x6O1$N04vLcYjfqC9o4O",
+                    refresh_token = "AIPTCVWIr9rDnw3T(HJPHgn86C8rSvuL",
+                    expire_time = "2020-02-13 12:40:26"
+                    where id = 24
+redis_obj stored
+{ id: 24,
+  secret_key: null,
+  username: '',
+  user_email: 'vivek@gmail.com',
+  access_token: '584tcIk7YAb9x6O1$N04vLcYjfqC9o4O',
+  refresh_token: 'AIPTCVWIr9rDnw3T(HJPHgn86C8rSvuL',
+  expire_time: '2020-02-13 12:40:26',
+  server_time: '2020-02-13 10:40:26',
+  updated_at: '2020-02-13 10:40:26',
+  user_group: undefined,
+  user_group_id: undefined }
+expire in =>  7140  seconds
+expire in =>  7140  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '24' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    if(um.user_group = 'admin_staff', sm.id , null) as type_id,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join staff_master as sm on sm.id = um.user_group_id 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 24 and um.status = 1 group by um.id

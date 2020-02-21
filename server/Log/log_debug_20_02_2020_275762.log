@@ -1,0 +1,802 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 35
+                    limit 1
+requested_plain_url ==>    /Employee/XMEeS8.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 34
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 3
+                    limit 1
+requested_plain_url ==>    /Employee/QslTNM.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 4
+                    limit 1
+Delete  SocketId:eTA9W2z0J7C_9HI8AAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 4
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 6
+                    limit 1
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/zPfZnk.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'raj',
+                        personal_email = "raj@gmail.com",
+                        official_email = "raj@gmail.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "8989898989",
+                        personal_email = "raj@gmail.com",
+                        add_image = 'Employee/zPfZnk.jpg',
+                        department = "3",
+                        reporting_to = "6"
+                    where id =6
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-20') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 6
+                    limit 1
+requested_plain_url ==>    /Employee/zPfZnk.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 1
+                    limit 1
+requested_plain_url ==>    /Employee/1bTUdr.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-20') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 3
+                    limit 1
+requested_plain_url ==>    /Employee/QslTNM.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 4
+                    limit 1
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'hardik',
+                        personal_email = "hardik@gmail.com",
+                        official_email = "hardik@rkwebtechnology.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "8989898989",
+                        personal_email = "hardik@gmail.com",
+                        add_image = 'Employee/YiIcR4.jpg',
+                        department = "3",
+                        reporting_to = "6"
+                    where id =4
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 4
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 6
+                    limit 1
+requested_plain_url ==>    /Employee/removeEmployeeIcon
+required check ------------------------->  false
+null
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/iKJjwZ.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'raj',
+                        personal_email = "raj@gmail.com",
+                        official_email = "raj@gmail.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "8989898989",
+                        personal_email = "raj@gmail.com",
+                        add_image = 'Employee/iKJjwZ.jpeg',
+                        department = "3",
+                        reporting_to = "6"
+                    where id =6
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 24
+                    limit 1
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/p4IAh7.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'vivek',
+                        personal_email = "vivek@gmail.com",
+                        official_email = "vivek123@gmail.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "8989898989",
+                        personal_email = "vivek@gmail.com",
+                        add_image = 'Employee/p4IAh7.jpg',
+                        department = "3",
+                        reporting_to = "6"
+                    where id =24
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 28
+                    limit 1
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1RMXWW.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'mohit',
+                        personal_email = "mohit@gmail.com",
+                        official_email = "mohit123@gmail.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "8989898989",
+                        personal_email = "mohit@gmail.com",
+                        add_image = 'Employee/1RMXWW.jpg',
+                        department = "6",
+                        reporting_to = "2"
+                    where id =28
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 35
+                    limit 1
+requested_plain_url ==>    /Employee/XMEeS8.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/removeEmployeeIcon
+required check ------------------------->  false
+{ [Error: ENOENT: no such file or directory, unlink '/var/www/html/hrm/server/Images/Employee/XMEeS8.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'unlink',
+  path: '/var/www/html/hrm/server/Images/Employee/XMEeS8.jpg' }
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/yjYXXK.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'brayan',
+                        personal_email = "brayan@gmail.com",
+                        official_email = "brayan123@gmail.com",
+                        password = "123456",
+                        current_address = "demo-1",
+                        permanent_address = "demo-1",
+                        emergency_number = "8989898989",
+                        personal_email = "brayan@gmail.com",
+                        add_image = 'Employee/yjYXXK.jpeg',
+                        department = "6",
+                        reporting_to = "2"
+                    where id =35
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 34
+                    limit 1
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/ftJewE.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'megh',
+                        personal_email = "megh@gmail.com",
+                        official_email = "megh123@gmail.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "7016231822",
+                        personal_email = "megh@gmail.com",
+                        add_image = 'Employee/ftJewE.jpg',
+                        department = "4",
+                        reporting_to = "2"
+                    where id =34
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 1
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 3
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 4
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 6
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 24
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 28
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 31
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 32
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 34
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 35
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 32
+                    limit 1
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/adI2vF.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'rahul',
+                        personal_email = "rahul@gmail.com",
+                        official_email = "rahul@rkwebtechnology.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "7016231822",
+                        personal_email = "rahul@gmail.com",
+                        add_image = 'Employee/adI2vF.jpeg',
+                        department = "3",
+                        reporting_to = "2"
+                    where id =32
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 31
+                    limit 1
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/SuasPG.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'ruchit',
+                        personal_email = "ruchit@gmail.com",
+                        official_email = "ruchit123@gmail.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "8989898989",
+                        personal_email = "ruchit@gmail.com",
+                        add_image = 'Employee/SuasPG.jpeg',
+                        department = "6",
+                        reporting_to = "2"
+                    where id =31
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 32
+                    limit 1
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:K50VJK86vgVM5FNRAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:3aP_TY4wstCAqV_UAAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 4
+                    limit 1
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:tKOkoHrcrA_cFXDuAAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:NM8QJJYfblRez3l5AAAE
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:XAhND8F7IFMLo1qTAAAF
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:RccXepTsF0cGH9HpAAAG
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:XwMLKoJcNeSjGENaAAAH
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:9OHWxBdYyiQCR7EEAAAI
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:c6PanuczsSKnE2BCAAAJ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:ByAtIEGIh-ewnWGSAAAK
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:cJgYaqOTE9LaLANlAAAL
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:AerNP7YLeRpIOdPPAAAM
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:DUJkJQPYjuTmRYJpAAAN
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:_0CkNFrR5NjOZcm2AAAO
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/55gHnX.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/removeEmployeeIcon
+required check ------------------------->  false
+null
+Delete  SocketId:Mzwb8fEtyxlcn9TjAAAP
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:y67gAIq7PfPtUu2PAAAQ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:J4Axa4l9DeCIkjkFAAAR
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:o66AQy8LuIpW3u15AAAS
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:47SjYtuHylcH4vOMAAAT
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:8ohl3ocPu_gKaZ-_AAAU
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:901NPIRysSZ-uqrfAAAV
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 1
+                    limit 1
+requested_plain_url ==>    /Employee/1bTUdr.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-20') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 1
+                    limit 1
+requested_plain_url ==>    /Employee/1bTUdr.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:QC1A35JCbG-LcNhRAAAW
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:yuLZW4k6vqyTTfgEAAAX
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:sv_UIGjqnya5FUJhAAAY
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:adRFbrnBpN4c5RO-AAAZ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:Gm0mJMaiUBFvX979AAAa
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results
+Delete  SocketId:kV-PoRVeLaAKrBkbAAAb
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+results

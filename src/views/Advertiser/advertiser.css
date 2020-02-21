@@ -1,0 +1,37 @@
+.searchA {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.searchA .search {
+    display: inline-block;
+    width: calc(100% - 319px);
+}
+.searchA span {
+    padding: 0 10px;
+    display: inline-block;
+}
+.searchA .drop {
+    display: inline-block;
+    float: right;
+    width: 70px;
+}
+@media(max-width: 768px){
+  
+    .searchA .drop {
+        display: block;
+        float: none;
+        width: 70px;
+        margin: 0 auto 10px auto;
+    }
+    .searchA span {
+        padding: 0 10px;
+        display: block;
+        margin: 0 auto 10px auto;
+        text-align: center;
+    }
+    .searchA .search {
+        display: block;
+        width: calc(100%);
+        margin: 0 auto 10px auto;
+    }
+}

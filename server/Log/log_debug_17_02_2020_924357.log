@@ -1,0 +1,340 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='ruchit@gmail.com' or BINARY um.email_id ='ruchit@gmail.com'
+a[c] ------> )
+salt ----------------------------------> b.join('')lITsBvUJzmHOhte5)DltcN57i1Gi4Bdy
+_updateTokenDetails sql ============> 	
+ update user_master set  
+                    access_token = "lITsBvUJzmHOhte5)DltcN57i1Gi4Bdy",
+                    refresh_token = "5i9P1KM8kO3e3l3S*VIrBTX5ZUFXOkEi",
+                    expire_time = "2020-02-17 11:50:21"
+                    where id = 38
+redis_obj stored
+{ id: 38,
+  secret_key: 'MzhfbnVsbF9udWxsXzY=',
+  username: '',
+  user_email: 'ruchit@gmail.com',
+  access_token: 'lITsBvUJzmHOhte5)DltcN57i1Gi4Bdy',
+  refresh_token: '5i9P1KM8kO3e3l3S*VIrBTX5ZUFXOkEi',
+  expire_time: '2020-02-17 11:50:21',
+  server_time: '2020-02-17 09:50:21',
+  updated_at: '2020-02-17 09:50:21',
+  user_group: undefined,
+  user_group_id: undefined }
+expire in =>  7140  seconds
+expire in =>  7140  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-17') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 38
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+Delete  SocketId:NDnUarzfjArd99p4AAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:PUDzpEhi86QujUIWAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:W0EK1-OwWhgkip8mAAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:-i8jjBv-azBb3itaAAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:awsFksrjqFKekB7qAAAE
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:AptyF46f2NOkAxLiAAAF
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:xuPbUhjBWCuDsdtiAAAG
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:xRKEGZKFPFyrBdgkAAAH
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:C6NNUdMfs7AhqLyOAAAI
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:qnptfrbmfJWUBHa2AAAJ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:q30yzQenoiUgiF7RAAAK
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:sXj-bX9VvWTrEKtNAAAL
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:_CNMzMDHMvwVSJ-VAAAM
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:L3DE3FXXE19pnJfqAAAN
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:iI-fqGKKmEn5QFtbAAAO
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:6s1x_uP8ZBX_ibgkAAAP
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:WGaVIOX-dabGzx7pAAAQ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:IMuPFYvyRSkhASs3AAAR
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:6XusAR2D0nIgIT-DAAAS
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:ylwJUZaf9kgEYy6PAAAT
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:yGieJ0piOBhbKBi-AAAU
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:lOi8dVCcxU3qqCUwAAAV
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:ZNZIC9wt5-K0OoTWAAAW
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:V7peSvFnjPM0h4wiAAAX
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:Qi8yLlfdLCTaaUj-AAAY
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:609sFFXD45YOgbP5AAAZ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:nmRINZ-94tDTvpIQAAAa
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:8sOh7aEPO8BNrJbVAAAb
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:3Cc-WfK6vcm0k73oAAAc
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:AcpqwO-bv6s5c3xIAAAd
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:yAKfWgvdKKW0nG_IAAAe
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:5L-waK1ie5X69G8MAAAf
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:5pqKr1vb0o5UxPyAAAAg
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:t5tlrZ_FI5aYslieAAAh
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:3thbniBwPCPwDxebAAAi
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:YWIx2VX3yVyln1VfAAAj
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:Gaju2r2tcPohdrZQAAAk
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/SzLdHU.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+Delete  SocketId:PlNH2dxFL6PJW5RJAAAl
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:IHJyG95vlsdnsPfNAAAm
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:sJ4IQEI78oaNUMoBAAAn
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:nfIvfI3PAW5QNfqVAAAo
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:W_ddIpTjfyMgSFiKAAAp
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:tHtuceFGjSq29kcZAAAq
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/uploadEmployeeIcon
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/XMEeS8.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('brayan@gmail.com') OR contact_number in('4545455656')
+insertEmployee sql 
+ insert into employee_master(
+                    status,
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    '1',
+                    'brayan',
+                    'brayan@gmail.com',
+                    'brayan123@gmail.com',
+                    '123456',
+                    'demo-1',
+                    'demo-1',
+                    '4545455656',
+                    '8989898989',
+                    'Employee/XMEeS8.jpg',
+                    6,
+                    '2'
+                )
+users sql 
+ 
+userres
+registerUsers sql ---------------> insert into users_master(
+                                                            status,
+                                                            user_type,
+                                                            first_name,
+                                                            email_id,
+                                                            mobile_no
+                                                            ) values (
+                                                            '1',
+                                                            '6',
+                                                            'brayan',
+                                                            'brayan@gmail.com',
+                                                            '4545455656'
+                                                            )
+enterd in create login
+createLogin sql ---------------> insert into user_master(
+                    email_id,
+                    password,
+                    first_name,
+                    mobile_no,
+                    status,
+                    avatar,
+                    user_role_id,
+                    secret_key
+                ) values (
+                    'brayan@gmail.com',
+                    '$2a$05$3/ETO1krnr.uRV7Jk2sMiuYkb9oc1dLpw50l787xcF9HcphjzHwqy',
+                    'brayan',
+                    '4545455656',
+                    '1',
+                    'Employee/XMEeS8.jpg',
+                    '6',
+                    'bnVsbF9icmF5YW5AZ21haWwuY29t'
+                )
+row1
+Delete  SocketId:J6NLQRcavxzSaJbkAAAr
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-17') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:keefhdOctqwTVx3kAAAs
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

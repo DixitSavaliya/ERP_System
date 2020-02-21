@@ -1,0 +1,66 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        name = 'Dixit',
+                        personal_email = "dixit20051998@gmail.com",
+                        official_email = "dixitpatel@rkwebtechnology.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "7016231822",
+                        personal_email = "dixit20051998@gmail.com",
+                        add_image = NULL,
+                        department = "2",
+                        reporting_to = "2"
+                    where id =1
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        name = 'Dixit',
+                        personal_email = "dixit20051998@gmail.com",
+                        official_email = "dixit@rkwebtechnology.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "7016231822",
+                        personal_email = "dixit20051998@gmail.com",
+                        add_image = NULL,
+                        department = "2",
+                        reporting_to = "2"
+                    where id =1
+requested_plain_url ==>    /Employee/registerEmployee
+required check ------------------------->  false
+checkDuplicateEmployee 
+select count(id) as count from employee_master where personal_email in('daxsavaliya@gmail.com')
+insertEmployee sql 
+ insert into employee_master(
+                    name,
+                    personal_email,
+                    official_email,
+                    password,
+                    current_address,
+                    permanent_address,
+                    contact_number,
+                    emergency_number,
+                    add_image,
+                    department,
+                    reporting_to
+                ) values(
+                    'Dax',
+                    'daxsavaliya@gmail.com',
+                    'dax@rkwebtechnology.com',
+                    '123456',
+                    'Rajkot',
+                    'Rajkot',
+                    '9999999988',
+                    '8989898989',
+                    NULL,
+                    3,
+                    '6'
+                )

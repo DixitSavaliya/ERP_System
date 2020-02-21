@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.114, ' Request_User ' -, ' Request_Date_Time ' 14-02-2020 17:53:43:64, ' Request_Type ' GET, ' Request_URL ' /User/wddUpq.jpeg, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 4992, ' Response_Time ' 11.245 ms,
+' Request_From_IP ' ::ffff:192.168.1.114, ' Request_User ' -, ' Request_Date_Time ' 14-02-2020 17:53:43:68, ' Request_Type ' POST, ' Request_URL ' /Application/getAdvertiserAppHitCount, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 110, ' Response_Time ' 21.134 ms,

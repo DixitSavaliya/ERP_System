@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.114, ' Request_User ' -, ' Request_Date_Time ' 11-02-2020 16:01:51:272, ' Request_Type ' POST, ' Request_URL ' /User/getAuthTokens, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 311, ' Response_Time ' 34.239 ms,
+' Request_From_IP ' ::ffff:192.168.1.114, ' Request_User ' -, ' Request_Date_Time ' 11-02-2020 16:01:54:707, ' Request_Type ' POST, ' Request_URL ' /User/getAuthTokens, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 311, ' Response_Time ' 7.724 ms,

@@ -1,0 +1,3 @@
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 12:48:05:54, ' Request_Type ' POST, ' Request_URL ' /Employee/updateEmployee, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 373, ' Response_Time ' 76.217 ms,
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 12:48:11:111, ' Request_Type ' POST, ' Request_URL ' /Employee/updateEmployee, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 368, ' Response_Time ' 82.205 ms,
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 10-02-2020 12:57:08:938, ' Request_Type ' POST, ' Request_URL ' /Employee/registerEmployee, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 66, ' Response_Time ' 75.759 ms,

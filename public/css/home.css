@@ -1,0 +1,195 @@
+body {
+	font-family: 'Poppins', sans-serif;	
+}
+/*-- Start Header --*/
+.bg-header {
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.bg-header img {
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.profile {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.profile-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  min-width: 200px;
+  box-shadow: 0px 0px 6px 1px #152d53;
+  z-index: 1;
+  top:72px;
+  right:-10px;
+}
+.profilelogged {
+    background-color: #152d53;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.profilelogged h5 {
+    padding: 12px 16px;
+    font-size: 15px;
+    padding: 12px 16px;
+    margin-bottom: 0px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.profilelogged h4 {
+    font-size: 20px;
+    padding: 12px 16px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.profilelogged h6 {
+    padding: 12px 16px;
+    font-size: 14px;
+    padding: 12px 16px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #fff;
+}
+.profile-list i {
+    padding-right: 15px;
+    color: #152d53;
+}
+.profile-list a {
+  color: #152d53;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size:15px;
+}
+.profile-list a:hover {
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #152d53;
+}
+.show {
+    display: block;
+}
+/* End Header */
+
+/*-- Start --*/
+.welcome_erp {
+    font-weight:bold;
+    font-size:42px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 7%; 
+}
+.bg-mainManu {
+    background: url("../images/home-banner.jpg") center center no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0px 0px 0px;
+    min-height: calc(100vh - 124px);
+}
+.bg-mainManu a:hover{
+    text-decoration: none;
+}
+.mainManu {
+    position: relative;
+}
+.mainManu {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 30px 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    cursor:pointer;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.mainManu:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #152d53;
+    left: 0;
+    top: 0;
+    content: "";
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.mainManu:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #152d53;
+    right: 0;
+    bottom: 0;
+    content: "";
+    -webkit-transition: .3s;
+    transition: .3s
+}
+.mainManu:hover:after {
+    width: 50%;
+    height: 4px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-bottom-right-radius:10px;
+}
+.mainManu:hover:before {
+    width: 50%;
+    height: 4px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-top-left-radius:10px;
+}
+.mainManu:hover {
+    box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.10)
+}
+.mainManu img {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+.mainManu h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #152d53;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+/*-- End --*/
+
+/*-- Start Footer --*/
+.footer-copyright {
+    background-color: #152d53;
+}
+.footer-copyright p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 15px 0px;
+}
+/*-- End Footer --*/
+
+@media(max-width: 768px) {
+    .welcome_erp {
+        font-size: 26px;
+        margin-bottom: 4%
+    }
+}	
+@media(max-width: 568px) {
+    .welcome_erp {
+        font-size: 26px;
+        margin-bottom: 8%
+    }
+}	

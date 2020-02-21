@@ -1,0 +1,223 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:Hlp5Cj7sp49eZGywAAAA
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='vivek@gmail.com' or BINARY um.email_id ='vivek@gmail.com'
+a[c] ------> {
+salt ----------------------------------> b.join('')hHjKPzEjAWsMDVNA{on6BGPL6u4SXcdU
+a[c] ------> )
+salt ----------------------------------> b.join('')qHO9D2hGA1xanRJx)GQVQsFSl3yxhqc2
+_updateTokenDetails sql ============> 	
+ update user_master set  
+                    access_token = "hHjKPzEjAWsMDVNA{on6BGPL6u4SXcdU",
+                    refresh_token = "qHO9D2hGA1xanRJx)GQVQsFSl3yxhqc2",
+                    expire_time = "2020-02-13 14:00:28"
+                    where id = 34
+redis_obj stored
+{ id: 34,
+  secret_key: 'bnVsbF92aXZla0BnbWFpbC5jb20=',
+  username: '',
+  user_email: 'vivek@gmail.com',
+  access_token: 'hHjKPzEjAWsMDVNA{on6BGPL6u4SXcdU',
+  refresh_token: 'qHO9D2hGA1xanRJx)GQVQsFSl3yxhqc2',
+  expire_time: '2020-02-13 14:00:28',
+  server_time: '2020-02-13 12:00:28',
+  updated_at: '2020-02-13 12:00:28',
+  user_group: undefined,
+  user_group_id: undefined }
+expire in =>  7140  seconds
+expire in =>  7140  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '34' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 34
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/countEmployee
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '34' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:dw8ov20e7x__pga5AAAC
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '34' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='vivek@gmail.com' or BINARY um.email_id ='vivek@gmail.com'
+redis_obj stored
+{ id: 34,
+  secret_key: 'bnVsbF92aXZla0BnbWFpbC5jb20=',
+  username: '',
+  user_email: 'vivek@gmail.com',
+  access_token: 'hHjKPzEjAWsMDVNA{on6BGPL6u4SXcdU',
+  refresh_token: 'qHO9D2hGA1xanRJx)GQVQsFSl3yxhqc2',
+  expire_time: '2020-02-13 14:00:28',
+  server_time: '2020-02-13 12:05:23',
+  updated_at: '2020-02-13 12:05:23',
+  user_group: undefined,
+  user_group_id: undefined }
+expire in =>  6845  seconds
+expire in =>  6845  seconds
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-13') as today_count
+                    from application_master as am
+                    where am.user_id = '34' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 34
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 34
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+Delete  SocketId:3rs_-ZEu2LkKzPm9AAAD
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 34
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+Delete  SocketId:Srj3zk9EFjzYkeXhAAAE
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+currentUser sql ------------->  select 
+                    um.*,
+                    2 as type,
+                    null as parent_id,
+                    ur.id as user_role_id,
+                    ur.name as user_role
+                from user_master as um 
+                left join user_role as ur on ur.id = um.user_role_id
+                where um.id = 34
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/registerUserRoleToRight
+required check ------------------------->  false
+						 
+ new_right_updated brodcasted 
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false
+requested_plain_url ==>    /UserRole/getUserRoleToRight
+required check ------------------------->  false

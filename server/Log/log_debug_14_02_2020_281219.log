@@ -1,0 +1,10 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 31
+                    limit 1

@@ -1,0 +1,10 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Document/removeDocument
+required check ------------------------->  false
+file_path =================> / Document/4n2hJ2.jpg
+{ [Error: ENOENT: no such file or directory, unlink '/var/www/html/hrm/server/Images// Document/4n2hJ2.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'unlink',
+  path: '/var/www/html/hrm/server/Images// Document/4n2hJ2.jpg' }

@@ -1,0 +1,87 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:J7nxdp-KsFv9V41zAAAA
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='dixit20051998@gmail.com' or BINARY um.email_id ='dixit20051998@gmail.com'
+password == hash: 
+Delete  SocketId:6LWNR4UAd3bsor62AAAB
+Delete  SocketId:b2TQAbsOgeTprCcEAAAC
+Delete  SocketId:Kgd_rAkyM78TTzqZAAAD
+Delete  SocketId:cIpopvBcz6dkU7F-AAAE
+Delete  SocketId:9vNN_JEHQC4UbjT4AAAF
+Delete  SocketId:U-yaZ4FXdaaUci4zAAAG
+Delete  SocketId:NyBVffB69YhqT0fzAAAH
+Delete  SocketId:pGprBDQXuf-yNJkcAAAI
+Delete  SocketId:cygHhnrJiuHgzlBoAAAJ
+Delete  SocketId:EYcDrD_RSY4RlE9nAAAK
+Delete  SocketId:Y5Jj9O2HrV7ByuaJAAAL
+Delete  SocketId:Et1hLjnV1opng-WsAAAM
+Delete  SocketId:aKDDO_J45ejZn5LqAAAN
+Delete  SocketId:LVecYRTrqpNfquiVAAAO
+Delete  SocketId:gEkye_jzUUMkxp2_AAAP
+Delete  SocketId:cfduWcr_43vc3Sg3AAAQ
+Delete  SocketId:FPFlNXM8gzvEuvN-AAAR
+Delete  SocketId:H4jZ9ZcJB4g57KKcAAAS
+Delete  SocketId:oW7HGD7lJ7YPKIYAAAAT
+Delete  SocketId:gWgc-m7jzsa1ZA8iAAAU
+Delete  SocketId:u0y2V3mAoS_pSGeuAAAV
+Delete  SocketId:6KbU1TkfNX2R8c3lAAAW
+Delete  SocketId:AvDExSUF1Z3sWxNlAAAX
+Delete  SocketId:29DOslcltjzLatDVAAAY
+Delete  SocketId:wF5YoEi-9d2qqQ56AAAZ
+Delete  SocketId:BOAYJvlFxumPXvscAAAa
+Delete  SocketId:RzwVzPr5AvRtY7qOAAAb
+Delete  SocketId:x8p5bd5fiHFruJn6AAAc
+Delete  SocketId:k78uPwcPf72EUUc6AAAd
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='adNetwork' or BINARY um.email_id ='adNetwork'
+password == hash: 
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='adNetwork' or BINARY um.email_id ='adNetwork'
+password == hash: 
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false
+Delete  SocketId:J3oAUebTyLEdPpH0AAAe
+requested_plain_url ==>    /User/getAuthTokens
+required check ------------------------->  false
+getAuthTokens login  sql ---------------------> 
+	  select 
+        um.*, 
+        ur.id as user_role_id, 
+        ur.name as user_role,
+        um.status 
+    from user_master as um  
+    left join user_role as ur on ur.id = um.user_role_id 
+    where BINARY um.username ='adNetwork' or BINARY um.email_id ='adNetwork'
+password == hash: 
+requested_plain_url ==>    /User/currentUser
+required check ------------------------->  false

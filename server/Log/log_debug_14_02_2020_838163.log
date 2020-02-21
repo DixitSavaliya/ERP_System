@@ -1,0 +1,20 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '0',
+                        name = 'rahul',
+                        personal_email = "rahul@gmail.com",
+                        official_email = "rahul@rkwebtechnology.com",
+                        password = "123456",
+                        current_address = "Rajkot",
+                        permanent_address = "Rajkot",
+                        emergency_number = "7016231822",
+                        personal_email = "rahul@gmail.com",
+                        add_image = NULL,
+                        department = "3",
+                        reporting_to = "2"
+                    where id =32
