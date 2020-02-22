@@ -47,22 +47,16 @@ class ViewDocument extends React.Component {
             rightdata: '',
             flag: 1,
             adhar_card_front: null,
-
             adhar_card_back: null,
-
             pan_card: null,
-
             passport_photo: null,
-
             passport: null,
-
             leaving_letter: null,
-
             original_certificate: null,
-
             bank_statement: null,
-
+            documentList: { document: true }
         }
+        this.list = this.list.bind(this);
     }
 
     componentDidUpdate() {
@@ -121,6 +115,11 @@ class ViewDocument extends React.Component {
         }
     }
 
+    list() {
+        this.props.location.state = this.state.documentList;
+        this.props.history.push("/list", { response: this.props });
+    }
+
 
     render() {
         return (
@@ -137,7 +136,7 @@ class ViewDocument extends React.Component {
                 <div className="container-fluid">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-10 back">
-                            <a href="/#/list" className="btn">Back</a>
+                            <a href="/#/document-list" className="btn">Back</a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +168,7 @@ class ViewDocument extends React.Component {
                                     <div className="col-md-10 col-lg-10 emp_details_main">
                                         {
                                             this.state.App.length > 0 ? (
-                                                <div className="row">
+                                                <div className="row" style={{ marginLeft: '5px' }}>
                                                     <div className="col-md-6 col-lg-4 emp_details_view">
                                                         <h4>Emp_ID</h4>
                                                         <h6>{this.state.App[0].emp_id}</h6>
@@ -240,8 +239,16 @@ class ViewDocument extends React.Component {
                                                     <div className="form-group">
                                                         <label>Adhhar Card <span>(Front)</span></label>
                                                     </div>
+
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.adhar_card_front} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.adhar_card_front != null ? (
+                                                                <img src={REMOTE_URL + this.state.adhar_card_front} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel1">
                                                                 <i className="fas fa-eye"></i>
@@ -258,7 +265,15 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.adhar_card_front} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.adhar_card_front != null ? (
+                                                                            <img src={REMOTE_URL + this.state.adhar_card_front} className="img-fluid" alt="" />
+                                                                        ) : (
+
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -273,7 +288,14 @@ class ViewDocument extends React.Component {
                                                         <label>Adhhar Card <span>(Back)</span></label>
                                                     </div>
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.adhar_card_back} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.adhar_card_back != null ? (
+                                                                <img src={REMOTE_URL + this.state.adhar_card_back} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel2">
                                                                 <i className="fas fa-eye"></i>
@@ -290,7 +312,14 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.adhar_card_back} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.adhar_card_back != null ? (
+                                                                            <img src={REMOTE_URL + this.state.adhar_card_back} className="img-fluid" alt="" />
+                                                                        ) : (
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -301,7 +330,14 @@ class ViewDocument extends React.Component {
                                                         <label>Pancard</label>
                                                     </div>
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.pan_card} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.pan_card != null ? (
+                                                                <img src={REMOTE_URL + this.state.pan_card} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel3">
                                                                 <i className="fas fa-eye"></i>
@@ -318,7 +354,14 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.pan_card} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.pan_card != null ? (
+                                                                            <img src={REMOTE_URL + this.state.pan_card} className="img-fluid" alt="" />
+                                                                        ) : (
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -329,7 +372,14 @@ class ViewDocument extends React.Component {
                                                         <label>Passport_Photo</label>
                                                     </div>
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.passport_photo} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.passport_photo != null ? (
+                                                                <img src={REMOTE_URL + this.state.passport_photo} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel4">
                                                                 <i className="fas fa-eye"></i>
@@ -346,7 +396,14 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.passport_photo} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.passport_photo != null ? (
+                                                                            <img src={REMOTE_URL + this.state.passport_photo} className="img-fluid" alt="" />
+                                                                        ) : (
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -357,7 +414,14 @@ class ViewDocument extends React.Component {
                                                         <label>Passport</label>
                                                     </div>
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.passport} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.passport != null ? (
+                                                                <img src={REMOTE_URL + this.state.passport} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel5">
                                                                 <i className="fas fa-eye"></i>
@@ -374,7 +438,14 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.passport} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.passport != null ? (
+                                                                            <img src={REMOTE_URL + this.state.passport} className="img-fluid" alt="" />
+                                                                        ) : (
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -385,7 +456,14 @@ class ViewDocument extends React.Component {
                                                         <label>Leaving Letter</label>
                                                     </div>
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.leaving_letter} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.leaving_letter != null ? (
+                                                                <img src={REMOTE_URL + this.state.leaving_letter} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel6">
                                                                 <i className="fas fa-eye"></i>
@@ -402,7 +480,14 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.leaving_letter} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.leaving_letter != null ? (
+                                                                            <img src={REMOTE_URL + this.state.leaving_letter} className="img-fluid" alt="" />
+                                                                        ) : (
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -413,7 +498,14 @@ class ViewDocument extends React.Component {
                                                         <label>Education  Ceretificat</label>
                                                     </div>
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.original_certificate} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.original_certificate != null ? (
+                                                                <img src={REMOTE_URL + this.state.original_certificate} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel7">
                                                                 <i className="fas fa-eye"></i>
@@ -430,7 +522,15 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.original_certificate} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.original_certificate != null ? (
+                                                                            <img src={REMOTE_URL + this.state.original_certificate} className="img-fluid" alt="" />
+                                                                        ) : (
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -441,7 +541,14 @@ class ViewDocument extends React.Component {
                                                         <label>Cancel Cheque</label>
                                                     </div>
                                                     <div className="document_image">
-                                                        <img src={REMOTE_URL + this.state.bank_statement} alt="" className="docs_img" />
+                                                        {
+                                                            this.state.bank_statement != null ? (
+                                                                <img src={REMOTE_URL + this.state.bank_statement} alt="" className="docs_img" />
+                                                            ) : (
+                                                                    <img src={require('./2.png')} alt="" className="docs_img" />
+                                                                )
+                                                        }
+
                                                         <div className="overlay">
                                                             <a className="view_docs" data-toggle="modal" data-target="#myModel8">
                                                                 <i className="fas fa-eye"></i>
@@ -458,7 +565,14 @@ class ViewDocument extends React.Component {
                                                                     </button>
                                                                 </div>
                                                                 <div className="modal-body" id="dynamic-content">
-                                                                    <img src={REMOTE_URL + this.state.bank_statement} className="img-fluid" alt="" />
+                                                                    {
+                                                                        this.state.bank_statement != null ? (
+                                                                            <img src={REMOTE_URL + this.state.bank_statement} className="img-fluid" alt="" />
+                                                                        ) : (
+                                                                                <img src={require('./2.png')} alt="" className="img-fluid" />
+                                                                            )
+                                                                    }
+
                                                                 </div>
                                                             </div>
                                                         </div>

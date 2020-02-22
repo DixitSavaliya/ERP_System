@@ -685,7 +685,7 @@ class Document extends React.Component {
                         <div className="col-lg-10 document_bg">
                             <form>
                                 <div className="row">
-                                    <div className="col-lg-6 employeeForm-label">
+                                    <div className="col-lg-6 employeeForm-label" style={{marginBottom: '16px'}}>
                                         <div className="form-group">
                                             <label>Search Emp_ID</label>
                                         </div>
@@ -726,13 +726,13 @@ class Document extends React.Component {
                 <div className="container-fluid">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-10 back">
-                            <a href="/#/list" className="btn">Back</a>
+                            <a href="/#/document-list" className="btn">Back</a>
                             {
                                 this.state.isButton == false ? (
 
-                                    <a onClick={this.save} className="btn">Save</a>
+                                    <a onClick={this.save} className="btn" style={{color:'#fff'}}>Save</a>
                                 ) : (
-                                        <a onClick={this.update} className="btn">Update</a>
+                                        <a onClick={this.update} className="btn" style={{color:'#fff'}}>Update</a>
                                     )
                             }
                         </div>

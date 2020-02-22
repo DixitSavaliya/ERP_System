@@ -1,0 +1,73 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:-kPac6shsZSo1X_vAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 35
+                    limit 1
+requested_plain_url ==>    /Employee/yjYXXK.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'brayan',
+                        personal_email = "brayan@gmail.com",
+                        official_email = "brayan123@gmail.com",
+                        password = "123456",
+                        current_address = "demo-1",
+                        permanent_address = "demo-1",
+                        emergency_number = "8989898989",
+                        personal_email = "brayan@gmail.com",
+                        add_image = 'Employee/yjYXXK.jpeg',
+                        department = "6",
+                        reporting_to = "2"
+                    where id =35
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/getEmployee
+required check ------------------------->  false
+getEmployee sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 35
+                    limit 1
+requested_plain_url ==>    /Employee/updateEmployee
+required check ------------------------->  false
+updateEmployee sql 
+
+update employee_master set 
+                        status = '1',
+                        name = 'brayan',
+                        personal_email = "brayan@gmail.com",
+                        official_email = "brayan123@gmail.com",
+                        password = "123456",
+                        current_address = "demo-1",
+                        permanent_address = "demo-1",
+                        emergency_number = "8989898989",
+                        personal_email = "brayan@gmail.com",
+                        add_image = 'Employee/yjYXXK.jpeg',
+                        department = "6",
+                        reporting_to = "2"
+                    where id =35
+requested_plain_url ==>    /Employee/employeeByPg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/getViewEmployeeDetailsById
+required check ------------------------->  false
+getApplication sql ===>  select 
+                        c.*
+                    from employee_master as c 
+                    where 
+                        c.id= 35
+                    limit 1

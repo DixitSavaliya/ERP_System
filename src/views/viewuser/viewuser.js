@@ -127,7 +127,7 @@ class ViewEmployee extends React.Component {
                                         }
 
                                         <div className="row d-flex flex-row-reverse">
-                                            <div className="col-md-10 col-lg-10 emp_details_main">
+                                            <div className="col-md-9 col-lg-9 emp_details_main">
                                                 {
                                                     this.state.App.length > 0 ? (
                                                         <div className="row">

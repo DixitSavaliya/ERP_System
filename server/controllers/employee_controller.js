@@ -24,6 +24,7 @@ router.post('/getViewEmployeeDetailsById', getViewEmployeeDetailsById);
 function registerEmployee(req, res) {
     var users = {
         id: req.body.id ? req.body.id : null,
+        emp_id:req.body.emp_id ? req.body.emp_id : null,
         name: req.body.name ? req.body.name : null,
         status: req.body.status ? req.body.status : null,
         personal_email: req.body.personal_email ? req.body.personal_email : null,
@@ -45,6 +46,7 @@ function registerEmployee(req, res) {
         checkDuplicateEmployee([`'` + users.personal_email + `'`], [`'` + users.contact_number + `'`]).then(function (resDuplicate) {
             if (resDuplicate.status == 1) {
                 var sql = `insert into employee_master(
+                    emp_id,
                     status,
                     name,
                     personal_email,
@@ -58,6 +60,7 @@ function registerEmployee(req, res) {
                     department,
                     reporting_to
                 ) values(
+                    '`+ users.emp_id + `',
                     '`+ users.status + `',
                     '`+ users.name + `',
                     '`+ users.personal_email + `',
@@ -257,6 +260,7 @@ function getEmployee(req, res) {
 function updateEmployee(req, res) {
     var users = {
         id: req.body.id ? req.body.id : null,
+        emp_id:req.body.emp_id ? req.body.emp_id : null,
         status: req.body.status ? req.body.status : null,
         name: req.body.name ? req.body.name : null,
         personal_email: req.body.personal_email ? req.body.personal_email : null,
@@ -273,6 +277,7 @@ function updateEmployee(req, res) {
 
     if (users.id) {
         var sql1 = `update employee_master set 
+                        emp_id = '`+ users.emp_id + `',
                         status = '`+ users.status + `',
                         name = '`+ users.name + `',
                         personal_email = "`+ users.personal_email + `",

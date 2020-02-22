@@ -28,7 +28,7 @@ class ViewDocumentContainer extends Component {
       const {auth,getViewEmployeeDetailsById,getEmployeeDocument} = this.props;
       this.id = this.props.location.pathname.split('/')[2];
       return (
-        <ViewDocument auth={auth} id={this.id} getViewEmployeeDetailsById={getViewEmployeeDetailsById} getEmployeeDocument={getEmployeeDocument}/>
+        <ViewDocument auth={auth} {...this.props} id={this.id} getViewEmployeeDetailsById={getViewEmployeeDetailsById} getEmployeeDocument={getEmployeeDocument}/>
       );
     }
 }

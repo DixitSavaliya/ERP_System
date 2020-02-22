@@ -34,6 +34,7 @@ const routes = {
   '/view-notification/:id' : 'ViewNotifications',
   '/view/:id' : 'viewEmployee',
   '/view-document/:id' : 'viewDocument',
-  '/document' : 'Document'
+  '/document' : 'Document',
+  '/document-list' : 'DocumentList'
 };
 export default routes;

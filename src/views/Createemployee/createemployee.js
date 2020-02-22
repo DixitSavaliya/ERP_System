@@ -188,7 +188,7 @@ class CreateEmployee extends React.Component {
     };
 
     validate() {
-        // let iderror = "";
+        let iderror = "";
         let nameerror = "";
         let personal_email_error = "";
         let official_email_error = "";
@@ -202,9 +202,9 @@ class CreateEmployee extends React.Component {
         let department_error = "";
         let reporting_to_error = "";
 
-        // if (!this.state.id) {
-        //     iderror = "please enter employee id";
-        // }
+        if (!this.state.id) {
+            iderror = "please enter employee id";
+        }
 
         if (!this.state.name) {
             nameerror = "please enter name";
@@ -260,8 +260,8 @@ class CreateEmployee extends React.Component {
             reporting_to_error = "please select reporting";
         }
 
-        if (nameerror || personal_email_error || official_email_error || password_error || confirm_password_error || current_address_error || permanent_address_error || contact_number_error || emergency_number_error || add_image_error || department_error || reporting_to_error) {
-            this.setState({ nameerror, personal_email_error, official_email_error, password_error, confirm_password_error, current_address_error, permanent_address_error, contact_number_error, emergency_number_error, add_image_error, department_error, reporting_to_error });
+        if (iderror || nameerror || personal_email_error || official_email_error || password_error || confirm_password_error || current_address_error || permanent_address_error || contact_number_error || emergency_number_error || add_image_error || department_error || reporting_to_error) {
+            this.setState({ iderror,nameerror, personal_email_error, official_email_error, password_error, confirm_password_error, current_address_error, permanent_address_error, contact_number_error, emergency_number_error, add_image_error, department_error, reporting_to_error });
             return false;
         }
         return true;
@@ -509,7 +509,7 @@ class CreateEmployee extends React.Component {
         const isValid = this.validate();
         if (isValid) {
             this.setState({
-                // iderror: '',
+                iderror: '',
                 nameerror: '',
                 personal_email_error: '',
                 official_email_error: '',
@@ -524,10 +524,11 @@ class CreateEmployee extends React.Component {
                 reporting_to_error: ''
             })
 
-            if (this.state.name && this.state.personal_email && this.state.official_email && this.state.password && this.state.confirm_password && this.state.current_address && this.state.permanent_address && this.state.contact_number && this.state.emergency_number && this.state.add_image && this.state.department && this.state.reporting_to) {
+            if (this.state.id && this.state.name && this.state.personal_email && this.state.official_email && this.state.password && this.state.confirm_password && this.state.current_address && this.state.permanent_address && this.state.contact_number && this.state.emergency_number && this.state.add_image && this.state.department && this.state.reporting_to) {
                 if (this.state.password == this.state.confirm_password) {
                     const obj = {
                         status: this.state.status,
+                        emp_id:this.state.id,
                         name: this.state.name,
                         personal_email: this.state.personal_email,
                         official_email: this.state.official_email,
@@ -567,6 +568,7 @@ class CreateEmployee extends React.Component {
         const isValid = this.validate();
         if (isValid) {
             this.setState({
+                iderror:'',
                 nameerror: '',
                 personal_email_error: '',
                 official_email_error: '',
@@ -584,6 +586,7 @@ class CreateEmployee extends React.Component {
                 if (this.state.password == this.state.confirm_password) {
                     const obj = {
                         id: this.props.id,
+                        emp_id:this.state.id,
                         status: this.state.status,
                         name: this.state.name,
                         personal_email: this.state.personal_email,
@@ -641,10 +644,10 @@ class CreateEmployee extends React.Component {
                             <a href="/#/list" className="btn">Back</a>
                             {
                                 this.props.id ? (
-                                    <a className="btn" onClick={this.update}>Update</a>
+                                    <a className="btn" onClick={this.update} style={{color:'#fff'}}>Update</a>
                                 ) : (
 
-                                        <a className="btn" onClick={this.create}>Save</a>
+                                        <a className="btn" onClick={this.create} style={{color:'#fff'}}>Save</a>
                                     )
                             }
                             <a href="#" className="btn">Cancel</a>
@@ -962,9 +965,9 @@ class CreateEmployee extends React.Component {
                                                 placeholder="Enter Permanent Address"
                                                 rows="2">
                                             </textarea> */}
-                                            <div style={{ fontSize: 12, color: "red" }}>
+                                            {/* <div style={{ fontSize: 12, color: "red" }}>
                                                 {this.state.permanent_address_error}
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
 

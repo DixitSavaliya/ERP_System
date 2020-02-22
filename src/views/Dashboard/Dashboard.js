@@ -117,7 +117,7 @@ class Dashboard extends Component {
                   </Link>
                 </div>
                 <div className="col-sm-6 col-md-6 col-lg-4">
-                  <Link to={{pathname: `/list`,state: {document:true}}}>
+                  <Link to="/document-list">
                     <div className="mainManu">
                       <img src={require('./images/documents1.svg')} alt="Employee Documents" />
                       <h4>Employee Documents</h4>

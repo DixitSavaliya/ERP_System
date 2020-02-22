@@ -18,6 +18,7 @@ import ChangePassword from '../../redux/containers/changepassword';
 import CreateEmployee from '../../redux/containers/createemployee';
 import ListEmployee from '../../redux/containers/listemployee';
 import Document from '../../redux/containers/document';
+import DocumentList from '../../redux/containers/documentlist';
 import ViewEmployee from '../../redux/containers/viewuser';
 import ViewDocument from '../../redux/containers/viewdocument';
 import PageNotFound from '../../views/Pages/Page404/Page404';
@@ -41,7 +42,8 @@ class Full extends Component {
                   <Route path="/profile" name="Profile" component={Profile} />
                   <Route path="/change-password" name="ChangePassword" component={ChangePassword} />
                   <Route path="/create" name="CreateEmployee" component={CreateEmployee} />
-                  <Route path="/list" name="ListEmployee" component={ListEmployee} />        
+                  <Route path="/list" name="ListEmployee" component={ListEmployee} />
+                  <Route path="/document-list" name="DocumentList" component={DocumentList} />         
                   <Route path="/view/:id" name="ViewEmployee" component={ViewEmployee} />
                   <Route path="/view-document/:id" name="ViewDocument" component={ViewDocument} />
                   <Route path="/document" name="Document" component={Document} />

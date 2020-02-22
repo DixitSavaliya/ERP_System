@@ -5,11 +5,7 @@ import { EventEmitter } from '../../event';
 import Swal from 'sweetalert2';
 import Auth from '../../redux/Auth';
 import checkRights from '../../rights';
-// React.Bootstrap = require('react-bootstrap');
-// React.Bootstrap.Select = require('react-bootstrap-select');
 import './listemployee.css';
-// import './bootstrap-select.min.css';
-// import './bootstrap-select.min.js';
 import {
     Table,
     Row,
@@ -90,10 +86,6 @@ class ListEmployee extends Component {
 
 
     componentDidMount() {
-        if (this.props.location.state != undefined || this.props.location.state != null) {
-            this.setState({ document: this.state.document = true });
-        }
-
         EventEmitter.subscribe('updated_rights', (value) => {
             this.setState({ flag: this.state.flag = 0 });
         });
@@ -333,8 +325,6 @@ class ListEmployee extends Component {
                 {
                     checkRights('employee', 'read') == true ? (
                         <section className="employee_list_bg">
-
-
                             <div className="container-fluid">
                                 <div className="row align-items-center justify-content-center">
                                     <div className="col-lg-10 welcome_list">
@@ -392,13 +382,7 @@ class ListEmployee extends Component {
                                 <div className="row align-items-center justify-content-center">
                                     <div className="col-lg-10 back">
                                         <a href="/#/dashboard" className="btn">Back</a>
-                                        {
-                                            this.state.document == false ? (
-                                                <a href="/#/create" className="btn">Add</a>
-                                            ) : (
-                                                    <a href="/#/document" className="btn">Add</a>
-                                                )
-                                        }
+                                        <a href="/#/create" className="btn">Add</a>
                                         <a href="#" className="btn">Export</a>
                                     </div>
                                 </div>
@@ -439,13 +423,7 @@ class ListEmployee extends Component {
                                                                                 <div className="col-12 col-sm-12 col-md-2 col-lg-2 details_edit">
                                                                                     <a onClick={() => this.editEmployeeData(data.id)}><i className="fas fa-pencil-alt"></i></a>
                                                                                     <a onClick={() => this.deleteUserData(data)}><i className="fas fa-trash-alt"></i></a>
-                                                                                    {
-                                                                                        this.state.document == false ? (
-                                                                                            <a onClick={() => this.appData(data)}><i className="fas fa-eye"></i></a>
-                                                                                        ) : (
-                                                                                                <a onClick={() => this.documentData(data)}><i className="fas fa-eye"></i></a>
-                                                                                            )
-                                                                                    }
+                                                                                    <a onClick={() => this.appData(data)}><i className="fas fa-eye"></i></a>
 
                                                                                 </div>
                                                                                 <div className="col-12 col-sm-12 col-md-3 col-lg-3 employee_name">
@@ -490,13 +468,7 @@ class ListEmployee extends Component {
                                                                                     <div className="col-12 col-sm-12 col-md-2 col-lg-2 details_edit">
                                                                                         <a onClick={() => this.editEmployeeData(data.id)}><i className="fas fa-pencil-alt"></i></a>
                                                                                         <a onClick={() => this.deleteUserData(data)}><i className="fas fa-trash-alt"></i></a>
-                                                                                        {
-                                                                                        this.state.document == false ? (
-                                                                                            <a onClick={() => this.appData(data)}><i className="fas fa-eye"></i></a>
-                                                                                        ) : (
-                                                                                                <a onClick={() => this.documentData(data)}><i className="fas fa-eye"></i></a>
-                                                                                            )
-                                                                                    }
+                                                                                        <a onClick={() => this.appData(data)}><i className="fas fa-eye"></i></a>
                                                                                     </div>
                                                                                     <div className="col-12 col-sm-12 col-md-3 col-lg-3 employee_name">
                                                                                         <h4>{data.name}</h4>
