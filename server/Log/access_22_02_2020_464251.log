@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 22-02-2020 11:34:50:925, ' Request_Type ' GET, ' Request_URL ' /User/wddUpq.jpeg, ' HTTP_Version ' 1.1, ' Response_Code ' 304, ' Content_Length ' -, ' Response_Time ' 4.183 ms,
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 22-02-2020 11:34:50:966, ' Request_Type ' POST, ' Request_URL ' /Employee/employeeByPg, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' -, ' Response_Time ' 14.101 ms,
