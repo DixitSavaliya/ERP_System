@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 26-02-2020 11:49:25:815, ' Request_Type ' GET, ' Request_URL ' /User/wddUpq.jpeg, ' HTTP_Version ' 1.1, ' Response_Code ' 304, ' Content_Length ' -, ' Response_Time ' 5.613 ms,
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 26-02-2020 11:49:37:676, ' Request_Type ' GET, ' Request_URL ' /User/wddUpq.jpeg, ' HTTP_Version ' 1.1, ' Response_Code ' 304, ' Content_Length ' -, ' Response_Time ' 0.905 ms,

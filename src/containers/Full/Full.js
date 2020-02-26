@@ -19,6 +19,7 @@ import CreateEmployee from '../../redux/containers/createemployee';
 import ListEmployee from '../../redux/containers/listemployee';
 import Document from '../../redux/containers/document';
 import DocumentList from '../../redux/containers/documentlist';
+import Invoice from '../../redux/containers/invoice';
 import ViewEmployee from '../../redux/containers/viewuser';
 import ViewDocument from '../../redux/containers/viewdocument';
 import PageNotFound from '../../views/Pages/Page404/Page404';
@@ -47,6 +48,7 @@ class Full extends Component {
                   <Route path="/view/:id" name="ViewEmployee" component={ViewEmployee} />
                   <Route path="/view-document/:id" name="ViewDocument" component={ViewDocument} />
                   <Route path="/document" name="Document" component={Document} />
+                  <Route path="/invoice" name="Invoice" component={Invoice} />
                   <Route path="/userrole" name="UserRole" component={UserRole} />
                   <Route path="/userright" name="UserRight" component={UserRight} />
                   <Route path="/userroletoright" name="UserRoleToRight" component={UserRoleToRight} />

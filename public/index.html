@@ -70,7 +70,90 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
+    <!-- <script type="text/javascript">
+      $(document).ready(function() {
+        $(".add-more").click(function(){ 
+          if($("#item_name").val() == ""){
+            $("#item_nameErr").html('Item Name Is Required');
+            return false;
+          }else {
+            $("#item_nameErr").html('');
+          }
+          if($("#unit_cost").val() == ""){
+            $("#unit_costErr").html('Unit Cost Is Required');
+            return false;
+          }else {
+            $("#unit_costErr").html('');
+          }
+          if($("#qty").val() == ""){
+            $("#qtyErr").html('Quantity Is Required');
+            return false;
+          }else {
+            $("#qtyErr").html('');
+          }
+          if($("#amount").val() == ""){
+            $("#amountErr").html('Amount Is Required');
+            return false;
+          }else {
+            $("#amountErr").html('')
+          }
+          $("#item_nameErr").html('');
+          $("#unit_costErr").html('');
+          $("#qtyErr").html('');
+          $("#amountErr").html('');
+          $("#biller").after(`
+                     <div class="row biller_bg">
+              <div class="col-md-6 col-lg-6 invoice_form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="item_name" id="item_name" placeholder="Your item Name">
+                    <div class="error" id="item_nameErr"></div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 invoice_form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="description" id="description" placeholder="Description">
+                    <div class="error" id="descriptionErr"></div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-lg-4 invoice_form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="unit_cost" id="unit_cost" placeholder="Enter Unit Cost">
+                    <div class="error" id="unit_costErr"></div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-lg-4 invoice_form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="qty" id="qty" placeholder="Enter Qty/Hr Rate">
+                    <div class="error" id="qtyErr"></div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-lg-4 invoice_form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="amount" id="amount" placeholder="Enter Amount">
+                    <div class="error" id="amountErr"></div>
+                  </div>
+              </div>
+            </div>
+                   `);
+        });
+  
+        $("#submit").click(function(e){
+          if($("#name").val() == ""){
+            $("#nameErr").html('Name Is Required');
+             return false;
+          }else {
+            $("#nameErr").html('');
+          }
+          if($("#address").val() == "") {
+            $("#addressErr").html('Address Is Required');
+            return false;
+          }else {
+            $("#addressErr").html('');
+          }
+          alert("form submited")
+        })
+      });
+    </script> -->
     <!-- <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js" ></script>
     <script type="text/javascript" src="js/popper.min.js"></script> 
     <script type="text/javascript" src="js/bootstrap.min.js"></script> 

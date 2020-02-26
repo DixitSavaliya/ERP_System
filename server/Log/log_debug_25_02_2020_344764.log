@@ -1,0 +1,18 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+body
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address,
+        items,
+        tax,
+        gst_number
+    ) values (
+        'fsf',
+        'dfsdfsdfsd',
+        '[object Object]',
+        'null',
+        'null'
+    )

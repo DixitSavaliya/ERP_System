@@ -1,0 +1,1 @@
+' Request_From_IP ' ::1, ' Request_User ' -, ' Request_Date_Time ' 26-02-2020 09:47:05:22, ' Request_Type ' POST, ' Request_URL ' /Invoice/getInvoice, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 269, ' Response_Time ' 12.252 ms,

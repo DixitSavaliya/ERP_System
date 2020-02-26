@@ -149,12 +149,12 @@ class Dashboard extends Component {
                   </a>
                 </div>
                 <div className="col-sm-6 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="/invoice">
                     <div className="mainManu">
                       <img src={require('./images/invoice1.svg')} alt="Invoice" />
                       <h4>Invoice</h4>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

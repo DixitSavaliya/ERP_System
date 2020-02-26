@@ -1,0 +1,39 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:Dv1KqgddSWsrbdjIAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+insertArray
+user
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'class-1',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera","description":"demo camera-mobile","unit_cost":"1500","qty":"1","amount":"1500"}]',
+        '12',
+        '123',
+        '2/26/2020'
+    )
+Delete  SocketId:D1aTApFauMqTedr2AAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:GzjJa3I5ZwWjwUvuAAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:YNQEF1Y197c0wu6pAAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

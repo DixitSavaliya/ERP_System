@@ -152,7 +152,7 @@ class ViewEmployee extends React.Component {
                                                                 <h6>{this.state.App[0].contact_number}</h6>
                                                             </div>
                                                             <div className="col-md-6 col-lg-4 emp_details_view">
-                                                                <h4>Emercany Number</h4>
+                                                                <h4>Emergency Number</h4>
                                                                 <h6>{this.state.App[0].emergency_number}</h6>
                                                             </div>
                                                             <div className="col-md-6 col-lg-4 emp_details_view">

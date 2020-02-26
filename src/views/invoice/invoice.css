@@ -1,0 +1,288 @@
+body {
+	font-family: 'Poppins', sans-serif !important;
+    background-color: #F4F3EF !important;
+}
+/*-- Start Header --*/
+.welcome_list {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.welcome_list h1 {
+    font-weight:bold;
+    font-size:32px;
+    color: #152d53;
+    margin-bottom: 40px; 
+    margin-top: 40px;
+}
+.bg_invoice {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    padding: 15px;
+}
+.biller_bg {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 20px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.invoice_form .form-control {
+    width: 100%;
+    height: calc(1.0em + 1.5rem + 2px);
+    padding: .375rem .75rem;
+    background-color: #fff;
+    border: 2px solid #d4d3d3;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.invoice_form .form-control:focus {
+    background-color: #fff;
+    border-color: #d9d9d9;
+    outline: 0;
+    box-shadow: -4px 0px 7px 4px rgb(244, 247, 249);
+}
+.error{
+    color: red;
+}
+.addmore .btn {
+    text-decoration: none;
+    background-color: #002a54;
+    border:2px solid #002a54;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.addmore i {
+    padding-right: 10px;
+}
+.addmore .btn:hover {
+    background: #002a54;
+    color: #fff !important;
+    border: 2px solid #002a54 !important;
+    outline: none;
+}
+.addmore .btn.focus, .btn:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+.submit .btn {
+    text-decoration: none;
+    background-color: #002a54;
+    border:2px solid #002a54;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-top: 0px;
+}
+.submit .btn:hover {
+    background: #002a54;
+    color: #fff !important;
+    border: 2px solid #002a54 !important;
+    outline: none;
+}
+.submit .btn.focus, .btn:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+@media(max-width: 1600px){
+    
+}
+@media(max-width: 1200px){
+    
+}
+@media(max-width: 992px) {
+	.welcome_list {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .media-m {
+        margin: 0px !important;
+    }
+} 
+@media(max-width: 768px) {
+    .welcome_list h1  {
+        font-size: 26px;
+        margin: 0 auto;
+        padding: 25px 15px;
+        text-align: center;
+    }
+    .submit, .addmore {
+        text-align: center;
+    }
+}	
+@media(max-width: 568px) {
+    
+}	
+
+
+/*-- Start Header --*/
+.bg_invoice {
+    background-color: #F4F3EF;
+    padding: 30px 40px 30px 40px;
+}
+.bg-header {
+    border-bottom: 2px solid #002a54;
+}
+.logo {
+    margin-bottom: 10px;
+}
+.logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #002a54;
+}
+.logo h2 {
+    font-size: 27px;
+    font-weight: 600;
+}
+.contact_details {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.contact_details h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.address {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.address h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+/*-- End Header --*/
+
+/*-- Start Billed --*/
+.bill_heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom:4px solid #002a54;
+}
+.billed_to {
+
+}
+.billed_to h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002a54;
+}
+.billed_to h5 {
+    font-size: 18px;
+    width: 350px;
+}
+.invoice_number h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002a54;
+}
+.invoice_number h5 {
+    font-size: 18px;
+}
+.invoice_total {
+    padding-right: 0px !important;
+    margin-left: 15px;
+}
+.invoice_total h6 {
+    padding-right: 0px !important;
+    font-size: 20px;
+    font-weight: bold;
+    color: #002a54;
+}
+.invoice_total h2 {
+    color: #002a54;
+    font-weight: bold;
+}
+/*-- End Billed --*/
+
+/*-- Start Invoice --*/
+.invoice_heading {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.invoice_heading h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002a54;
+}
+.invoice {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom:2px solid #002a54;
+}
+.invoice h5 {
+    font-weight: bold;
+    font-size: 18px;
+}
+.subtotal_main {
+    padding-top: 15px;
+}
+.sub_total {
+}
+.sub_total h5 {
+    float: right;
+    font-weight: bold;
+    color: #002a54;
+}
+.sub_total h6 {
+    float: right;
+}
+/*-- End Invoice --*/
+
+/*-- Start Footer --*/
+.footer {
+    border-top:2px solid #002a54;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: #002a54;
+}
+.footer h5 {
+    margin-bottom: 0px;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: max-content !important;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        /* margin: 4.75rem auto; */
+        margin-left: 198px !important;
+    }
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 3rem !important;
+}
+/*-- End Footer --*/

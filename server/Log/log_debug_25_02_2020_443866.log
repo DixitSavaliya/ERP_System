@@ -1,0 +1,17 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address,
+        items,
+        tax,
+        gst_number
+    ) values (
+        'rkweb',
+        '413,complex',
+        '[object Object]',
+        '12',
+        'null'
+    )

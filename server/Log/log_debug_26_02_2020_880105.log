@@ -1,0 +1,25 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+insertArray
+user
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'rkweb',
+        '413,anmol complex',
+        '413,anmol complex',
+        '[object Object]',
+        '12',
+        '123',
+        '2020-02-26'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200222'
+                        where id = 22

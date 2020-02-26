@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 26-02-2020 10:06:16:309, ' Request_Type ' POST, ' Request_URL ' /Invoice/createInvoice, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 361, ' Response_Time ' 53.930 ms,
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 26-02-2020 10:06:16:352, ' Request_Type ' POST, ' Request_URL ' /Invoice/getInvoice, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 269, ' Response_Time ' 3.494 ms,

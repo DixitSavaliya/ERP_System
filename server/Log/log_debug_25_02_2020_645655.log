@@ -1,0 +1,21 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:SEj1mz30HDrOomIeAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address,
+        items,
+        tax,
+        gst_number
+    ) values (
+        'rkweb',
+        '413,complex',
+        '[object Object]',
+        '12',
+        'null'
+    )

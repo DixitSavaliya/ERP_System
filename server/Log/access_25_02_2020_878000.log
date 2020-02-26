@@ -1,0 +1,2 @@
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 25-02-2020 15:21:25:177, ' Request_Type ' GET, ' Request_URL ' /User/wddUpq.jpeg, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 4992, ' Response_Time ' 6.293 ms,
+' Request_From_IP ' ::ffff:192.168.1.104, ' Request_User ' -, ' Request_Date_Time ' 25-02-2020 15:21:39:691, ' Request_Type ' POST, ' Request_URL ' /Invoice/createInvoice, ' HTTP_Version ' 1.1, ' Response_Code ' 200, ' Content_Length ' 361, ' Response_Time ' 74.812 ms,

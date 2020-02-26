@@ -1,0 +1,27 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address,
+        item_name,
+        description,
+        unit_cost,
+        qty,
+        amount,
+        tax,
+        gst_number
+    ) values (
+        'abcd',
+        'demo abcd',
+        'Classicd',
+        'demo descd',
+        '1000',
+        '1',
+        '1000',
+        '12',
+        '123'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'UktfMjAyMF8yNV8y'
+                        where id = 2

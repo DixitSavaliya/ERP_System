@@ -1,0 +1,127 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:MNUYRQKqCj93aD2MAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'class-1',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera","unit_cost":"150000","qty":"1","amount":"1500","description":"demo camera"}]',
+        '150',
+        '123456',
+        '2020-02-26'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200265'
+                        where id = 65
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 65
+                    limit 1
+Delete  SocketId:cMc56z4F4FXqxFpiAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:JXw5cA_m-3kRfyLyAAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:uUkF-qmxdSDWnVOsAAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:PX635M27v5HEe8KvAAAE
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:ojqEO1iOcc1Cc4XuAAAF
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'testing',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"mobile","unit_cost":"150000","qty":"2","amount":"150000","description":"demo camera"},{"item_name":"tv","unit_cost":"250000","qty":"1","amount":"250000","description":"demo camera-mobile"},{"item_name":"game","unit_cost":"232000","qty":"4","amount":"232000","description":"demo tvs"}]',
+        '150',
+        '123456',
+        '2020-02-26'
+    )
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'testing',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"mobile","unit_cost":"150000","qty":"2","amount":"150000","description":"demo camera"},{"item_name":"tv","unit_cost":"250000","qty":"1","amount":"250000","description":"demo camera-mobile"},{"item_name":"game","unit_cost":"232000","qty":"4","amount":"232000","description":"demo tvs"}]',
+        '150',
+        '123456',
+        '2020-02-26'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200266'
+                        where id = 66
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 66
+                    limit 1
+Delete  SocketId:owqA1dtk64cagjg2AAAG
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:OvL-qwCRmsvCNY1IAAAH
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:eMVDzXKx9kkhLkTWAAAI
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:DCGtz8pJISG9GIzPAAAJ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:DBwz9nhEDXEAzO8cAAAK
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:KdjS1OlmBOkPYXTFAAAL
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

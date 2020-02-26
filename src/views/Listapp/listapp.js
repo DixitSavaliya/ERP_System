@@ -4,7 +4,7 @@ import TableApp from '../Tables/tableapp';
 import App_List from '../Tables/app_list';
 import { EventEmitter } from '../../event';
 import { Link } from 'react-router-dom';
-import './listapp.css';
+// import './invoice.css';
 import checkRights from '../../rights';
 import {
     Badge,

@@ -1,0 +1,43 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+Delete  SocketId:EJa2bT3kfOpxCQkiAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+insertArray
+user
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'rkweb',
+        '413,anmol complex',
+        '413,anmol complex',
+        '[{"item_name":"camera","description":"demo camera","unit_cost":"1500","qty":"1","amount":"1500"}]',
+        '12',
+        '123',
+        '2020-02-26'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200231'
+                        where id = 31
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 31
+                    limit 1
+rows[0]
+Delete  SocketId:6a1d_4CDv7BqHdpNAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:MwV4mwyWxu9sOMhYAAAC

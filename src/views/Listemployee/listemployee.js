@@ -60,7 +60,6 @@ class ListEmployee extends Component {
             rightdata: '',
             flag: 1,
             document: false
-
         }
         this.handleClick = this.handleClick.bind(this);
         this.btnDecrementClick = this.btnDecrementClick.bind(this);

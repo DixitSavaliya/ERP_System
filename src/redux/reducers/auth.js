@@ -1160,6 +1160,44 @@ const auth = (state = initialState, action) => {
                 fetching: false,
                 error: action.error
             };
+        
+            //CREATEINVOICE                       
+            case ACTION.CREATEINVOICE_REQUEST:
+                return {
+                    ...state,
+                    fetching: true,
+                };
+            case ACTION.CREATEINVOICE_SUCCESS:
+                return {
+                    ...state,
+                    fetching: false
+                };
+            case ACTION.CREATEINVOICE_FAILURE:
+                Swal.fire("Something went wrong!", "", "warning");
+                return {
+                    ...state,
+                    fetching: false,
+                    error: action.error
+                };
+
+                   //GETINVOICE                       
+            case ACTION.GETINVOICE_REQUEST:
+                return {
+                    ...state,
+                    fetching: true,
+                };
+            case ACTION.GETINVOICE_SUCCESS:
+                return {
+                    ...state,
+                    fetching: false
+                };
+            case ACTION.GETINVOICE_FAILURE:
+                Swal.fire("Something went wrong!", "", "warning");
+                return {
+                    ...state,
+                    fetching: false,
+                    error: action.error
+                };
 
 
 
