@@ -1,0 +1,427 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1RMXWW.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/adI2vF.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/SuasPG.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/ftJewE.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /SalarySlip/createSalarySlip
+required check ------------------------->  false
+createSalarySlip sql ---------------> insert into salaryslip_master(
+        employee_name,
+        month,
+        working_day
+    ) values (
+        '[{"id":4,"emp_id":"DF123","status":1,"name":"hardik","personal_email":"hardik@gmail.com","official_email":"hardik@rkwebtechnology.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"9999999988","emergency_number":"8989898989","add_image":"Employee/YiIcR4.jpg","department":3,"reporting_to":6},{"id":28,"emp_id":"M113","status":1,"name":"mohit","personal_email":"mohit@gmail.com","official_email":"mohit123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7897891423","emergency_number":"8989898989","add_image":"Employee/1RMXWW.jpg","department":6,"reporting_to":2},{"id":31,"emp_id":"MD123","status":1,"name":"ruchit","personal_email":"ruchit@gmail.com","official_email":"ruchit123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"1234567891","emergency_number":"8989898989","add_image":"Employee/SuasPG.jpeg","department":6,"reporting_to":2},{"id":32,"emp_id":"94hfg","status":1,"name":"rahul","personal_email":"rahul@gmail.com","official_email":"rahul@rkwebtechnology.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7889966554","emergency_number":"7016231822","add_image":"Employee/adI2vF.jpeg","department":3,"reporting_to":2},{"id":34,"emp_id":"23bcd","status":1,"name":"megh","personal_email":"megh@gmail.com","official_email":"megh123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7878585854","emergency_number":"7016231822","add_image":"Employee/ftJewE.jpg","department":4,"reporting_to":2}]',
+        '02/2021',
+        '34'
+    )
+Delete  SocketId:ncYxenADXNT21ipsAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:aftJwqNkmKfH9mbZAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:bBeFTFJc48-yv4x6AAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1RMXWW.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/ftJewE.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /SalarySlip/createSalarySlip
+required check ------------------------->  false
+createSalarySlip sql ---------------> insert into salaryslip_master(
+        employee_name,
+        month,
+        working_day
+    ) values (
+        '[{"id":28,"emp_id":"M113","status":1,"name":"mohit","personal_email":"mohit@gmail.com","official_email":"mohit123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7897891423","emergency_number":"8989898989","add_image":"Employee/1RMXWW.jpg","department":6,"reporting_to":2},{"id":34,"emp_id":"23bcd","status":1,"name":"megh","personal_email":"megh@gmail.com","official_email":"megh123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7878585854","emergency_number":"7016231822","add_image":"Employee/ftJewE.jpg","department":4,"reporting_to":2}]',
+        '04/2018',
+        '67'
+    )
+Delete  SocketId:GbRA-bxozL6UkUNpAAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:kY-QE406AFz-71UfAAAE
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:HuWbqelL_JBjwVoVAAAF
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:1ZO-MF-UZqBfdfSJAAAG
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:CZ7UrQz-i4NSGAtFAAAH
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:-iRwVv67VJzLYkSRAAAI
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:MDcJuf6uygLRVb-MAAAJ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1RMXWW.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/ftJewE.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /SalarySlip/createSalarySlip
+required check ------------------------->  false
+createSalarySlip sql ---------------> insert into salaryslip_master(
+        employee_name,
+        month,
+        working_day
+    ) values (
+        '[{"id":28,"emp_id":"M113","status":1,"name":"mohit","personal_email":"mohit@gmail.com","official_email":"mohit123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7897891423","emergency_number":"8989898989","add_image":"Employee/1RMXWW.jpg","department":6,"reporting_to":2},{"id":34,"emp_id":"23bcd","status":1,"name":"megh","personal_email":"megh@gmail.com","official_email":"megh123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7878585854","emergency_number":"7016231822","add_image":"Employee/ftJewE.jpg","department":4,"reporting_to":2}]',
+        '05/2020',
+        '130'
+    )
+Delete  SocketId:4Vj-PA4bfSFl27FKAAAK
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:R03FmiX6nSvy6YorAAAL
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1RMXWW.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/adI2vF.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/ftJewE.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/SuasPG.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/YiIcR4.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /SalarySlip/createSalarySlip
+required check ------------------------->  false
+createSalarySlip sql ---------------> insert into salaryslip_master(
+        employee_name,
+        month,
+        working_day
+    ) values (
+        '[{"id":4,"emp_id":"DF123","status":1,"name":"hardik","personal_email":"hardik@gmail.com","official_email":"hardik@rkwebtechnology.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"9999999988","emergency_number":"8989898989","add_image":"Employee/YiIcR4.jpg","department":3,"reporting_to":6},{"id":28,"emp_id":"M113","status":1,"name":"mohit","personal_email":"mohit@gmail.com","official_email":"mohit123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7897891423","emergency_number":"8989898989","add_image":"Employee/1RMXWW.jpg","department":6,"reporting_to":2},{"id":31,"emp_id":"MD123","status":1,"name":"ruchit","personal_email":"ruchit@gmail.com","official_email":"ruchit123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"1234567891","emergency_number":"8989898989","add_image":"Employee/SuasPG.jpeg","department":6,"reporting_to":2},{"id":32,"emp_id":"94hfg","status":1,"name":"rahul","personal_email":"rahul@gmail.com","official_email":"rahul@rkwebtechnology.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7889966554","emergency_number":"7016231822","add_image":"Employee/adI2vF.jpeg","department":3,"reporting_to":2},{"id":34,"emp_id":"23bcd","status":1,"name":"megh","personal_email":"megh@gmail.com","official_email":"megh123@gmail.com","password":"123456","current_address":"Rajkot","permanent_address":"Rajkot","contact_number":"7878585854","emergency_number":"7016231822","add_image":"Employee/ftJewE.jpg","department":4,"reporting_to":2}]',
+        '05/2020',
+        '230'
+    )
+Delete  SocketId:znhdFODtGp9VVyfrAAAM
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:Gv-O8CDRk8fdnzoQAAAN
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:bzFChJgaJSQebtmoAAAO
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /Employee/searchEmployeeData
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/1RMXWW.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+requested_plain_url ==>    /Employee/ftJewE.jpg
+multimedia[(multimedia.length - 1)]jpg
+required check ------------------------->  false
+Delete  SocketId:1ORQAZL4ZLE6crU0AAAP
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-27') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:hjoiOMBoInwPJaisAAAQ

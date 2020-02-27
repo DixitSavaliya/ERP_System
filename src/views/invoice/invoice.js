@@ -76,13 +76,17 @@ class Invoice extends React.Component {
             fulltotal: '',
             mainItems: '',
             subtotal: '',
-            main_total: ''
+            main_total: '',
+            isEdit: false,
+            editIndex: -1,
+            item_are_required: ''
         }
         this.handleChange = this.handleChange.bind(this);
         this.create = this.create.bind(this);
         this.add = this.add.bind(this);
         this.toggle = this.toggle.bind(this);
         this.handlePdf = this.handlePdf.bind(this);
+        this.editRow = this.editRow.bind(this);
     }
 
     componentDidUpdate() {
@@ -95,10 +99,10 @@ class Invoice extends React.Component {
     }
 
     componentDidMount() {
-        EventEmitter.subscribe('updated_rights', (value) => {
+        EventEmitter.subscribe('updated_rights', (defaultValue) => {
             this.setState({ flag: this.state.flag = 0 });
         });
-        EventEmitter.subscribe('isDisplay', (value) => {
+        EventEmitter.subscribe('isDisplay', (defaultValue) => {
             this.setState({ isDisplay: this.state.isDisplay = true });
         });
     }
@@ -106,8 +110,9 @@ class Invoice extends React.Component {
     handleChange(event) {
         event.preventDefault();
         const state = this.state
-        state[event.target.name] = event.target.value;
-        this.setState(...state, state);
+        let key = event.target.name;
+        state[key] = event.target.value;
+        this.setState(state);
     }
 
     toggle() {
@@ -117,13 +122,7 @@ class Invoice extends React.Component {
     validate() {
         let biller_name_error = "";
         let address_1_error = "";
-        let item_name_error = "";
-        // let description_error = "";
-        let unit_cost_error = "";
-        let qty_error = "";
-        let amount_error = "";
-        // let gst_number_error = "";
-        // let tax_error = "";
+        let item_are_required = "";
 
         if (!this.state.biller_name) {
             biller_name_error = "please enter biler name";
@@ -133,44 +132,18 @@ class Invoice extends React.Component {
             address_1_error = "please enter address";
         }
 
-        if (!this.state.item_name) {
-            item_name_error = "please enter item name";
-        }
-
-        // if (!this.state.description) {
-        //     description_error = "please enter description";
+        // if (this.state.items.length == 0) {
+        //     item_are_required = 'items are required';
         // }
 
-        if (!this.state.unit_cost) {
-            unit_cost_error = "please enter unit cost";
-        }
-
-        if (!this.state.qty) {
-            qty_error = "please enter qty";
-        }
-
-        if (!this.state.amount) {
-            amount_error = "please enter amount";
-        }
-
-        // if (!this.state.gst_number) {
-        //     gst_number_error = "please enter gst number";
-        // }
-
-        // if (!this.state.tax) {
-        //     tax_error = "please enter tax";
-        // }
-
-
-
-        if (biller_name_error || address_1_error || item_name_error || unit_cost_error || qty_error || amount_error) {
-            this.setState({ biller_name_error, address_1_error, item_name_error, unit_cost_error, qty_error, amount_error });
+        if (biller_name_error || address_1_error) {
+            this.setState({ biller_name_error, address_1_error });
             return false;
         }
         return true;
     };
 
-    validate1() {
+    async validate1() {
         let item_name_error = "";
         let unit_cost_error = "";
         let qty_error = "";
@@ -192,11 +165,17 @@ class Invoice extends React.Component {
             amount_error = "please enter amount";
         }
 
-        if (item_name_error || unit_cost_error || qty_error || amount_error) {
-            this.setState({ item_name_error, unit_cost_error, qty_error, amount_error });
+        if (item_name_error && unit_cost_error && qty_error && amount_error) {
+            await this.setState({
+                item_name_error: this.state.item_name_error = item_name_error,
+                unit_cost_error: this.state.unit_cost_error = unit_cost_error,
+                qty_error: this.state.qty_error = qty_error,
+                amount_error: this.state.amount_error = amount_error,
+            })
             return false;
+        } else {
+            return true;
         }
-        return true;
     };
 
     create() {
@@ -205,22 +184,20 @@ class Invoice extends React.Component {
             this.setState({
                 biller_name_error: '',
                 address_1_error: '',
-                item_name_error: '',
-                unit_cost_error: '',
-                qty_error: '',
-                amount_error: ''
+                item_are_required: '',
             })
 
-            if (this.state.biller_name && this.state.address_1 && this.state.item_name && this.state.qty && this.state.amount && this.state.unit_cost) {
-                if (this.state.isDisplay == false) {
-                    const item = [];
-                    item.push({
-                        item_name: this.state.item_name,
-                        description: this.state.description,
-                        unit_cost: this.state.unit_cost,
-                        qty: this.state.qty,
-                        amount: this.state.amount
-                    })
+            if (this.state.isDisplay == false) {
+                const item = [];
+                item.push({
+                    item_name: this.state.item_name,
+                    description: this.state.description,
+                    unit_cost: this.state.unit_cost,
+                    qty: this.state.qty,
+                    amount: this.state.amount
+                })
+
+                if (item && item.length >= 0) {
                     const obj = {
                         biller_name: this.state.biller_name,
                         address_1: this.state.address_1,
@@ -295,6 +272,13 @@ class Invoice extends React.Component {
                         }
                     });
                 } else {
+                    Swal.fire({
+                        text: "Please enter all fields first",
+                        icon: 'warning'
+                    });
+                }
+            } else {
+                if (this.state.items && this.state.items.length > 0) {
                     const obj = {
                         biller_name: this.state.biller_name,
                         address_1: this.state.address_1,
@@ -368,16 +352,16 @@ class Invoice extends React.Component {
                             });
                         }
                     });
+                } else {
+                    Swal.fire({
+                        text: "Please enter all fields first",
+                        icon: 'warning'
+                    });
                 }
-
-
-            } else {
-                Swal.fire("PLease Enter Field First!", "", "warning");
             }
         }
     }
 
-    /** Order pdf generate */
     handlePdf() {
         let page = document.getElementById('page');
         html2PDF(page, {
@@ -400,31 +384,106 @@ class Invoice extends React.Component {
         //     });
     };
 
-    add() {
-        const isValid = this.validate1();
+    async add() {
+        const isValid = await this.validate1();
         if (isValid) {
-            this.setState({
-                item_name_error: '',
-                unit_cost_error: '',
-                qty_error: '',
-                amount_error: '',
-            })
 
-            if (this.state.item_name && this.state.unit_cost && this.state.qty && this.state.amount) {
-                var itemArray = {
-                    item_name: this.state.item_name,
-                    unit_cost: this.state.unit_cost,
-                    qty: this.state.qty,
-                    amount: this.state.amount,
-                    description: this.state.description
-                }
+            var itemArray = {
+                item_name: this.state.item_name,
+                unit_cost: this.state.unit_cost,
+                qty: this.state.qty,
+                amount: this.state.amount,
+                description: this.state.description,
+            }
+            if (this.state.item_name) {
                 this.setState({
-                    items: this.state.items = [...this.state.items, itemArray],
-                    isDisplay: this.state.isDisplay = true
+                    item_name: this.state.item_name,
+                    item_name_error: this.state.item_name_error = '',
+                })
+            }
+            if (this.state.description) {
+                this.setState({
+                    description: this.state.description,
+                })
+            }
+            if (this.state.unit_cost) {
+                this.setState({
+                    unit_cost: this.state.unit_cost,
+                    unit_cost_error: this.state.unit_cost_error = '',
+                })
+            }
+            if (this.state.qty) {
+                this.setState({
+                    qty: this.state.qty,
+                    qty_error: this.state.qty_error = '',
+                })
+            }
+            if (this.state.amount) {
+                this.setState({
+                    amount: this.state.amount,
+                    amount_error: this.state.amount_error = '',
+                })
+            }
+            if (this.state.item_name && this.state.unit_cost && this.state.qty && this.state.amount) {
+                this.state.items.unshift(itemArray);
+                this.setState({
+                    isDisplay: this.state.isDisplay = true,
+                    item_name_error: this.state.item_name_error = '',
+                    unit_cost_error: this.state.unit_cost_error = '',
+                    qty_error: this.state.qty_error = '',
+                    amount_error: this.state.amount_error = '',
+                    item_name: this.state.item_name = '',
+                    unit_cost: this.state.unit_cost = '',
+                    qty: this.state.qty = '',
+                    amount: this.state.amount = '',
+                    description: this.state.description = '',
                 })
                 console.log("items", this.state.items);
             }
         }
+    }
+
+    editRow(data, index) {
+        this.setState({
+            editIndex: this.state.editIndex = index,
+            isEdit: this.state.isEdit = true,
+            item_name_error: this.state.item_name_error = '',
+            unit_cost_error: this.state.unit_cost_error = '',
+            qty_error: this.state.qty_error = '',
+            amount_error: this.state.amount_error = '',
+            item_name: this.state.item_name = data.item_name,
+            unit_cost: this.state.unit_cost = data.unit_cost,
+            qty: this.state.qty = data.qty,
+            amount: this.state.amount = data.amount,
+            description: this.state.description = data.description,
+        })
+    }
+
+    updateRow() {
+        let ind = this.state.editIndex;
+        let array = this.state.items;
+        let obj = {
+            item_name: this.state.item_name,
+            unit_cost: this.state.unit_cost,
+            qty: this.state.qty,
+            amount: this.state.amount,
+            description: this.state.description,
+        };
+        array[ind] = obj;
+        this.setState({
+            items: this.state.items = array,
+            isEdit: this.state.isEdit = false,
+            editIndex: this.state.editIndex = -1,
+            item_name_error: this.state.item_name_error = '',
+            unit_cost_error: this.state.unit_cost_error = '',
+            qty_error: this.state.qty_error = '',
+            amount_error: this.state.amount_error = '',
+            item_name: this.state.item_name = '',
+            unit_cost: this.state.unit_cost = '',
+            qty: this.state.qty = '',
+            amount: this.state.amount = '',
+            description: this.state.description = '',
+        })
     }
 
     render() {
@@ -455,7 +514,7 @@ class Invoice extends React.Component {
                                                     id="name"
                                                     placeholder="Enter Biller Name"
                                                 />
-                                                <div style={{ fontSize: 12, color: "red" }}>
+                                                <div className="error text-danger">
                                                     {this.state.biller_name_error}
                                                 </div>
                                             </div>
@@ -470,7 +529,7 @@ class Invoice extends React.Component {
                                                     id="address"
                                                     placeholder="Enter Address"
                                                 />
-                                                <div style={{ fontSize: 12, color: "red" }}>
+                                                <div className="error text-danger">
                                                     {this.state.address_1_error}
                                                 </div>
                                             </div>
@@ -499,11 +558,12 @@ class Invoice extends React.Component {
                                                         type="text"
                                                         className="form-control"
                                                         name="item_name"
+                                                        value={this.state.item_name}
                                                         onChange={this.handleChange}
                                                         id="item_name"
                                                         placeholder="Your item Name"
                                                     />
-                                                    <div style={{ fontSize: 12, color: "red" }}>
+                                                    <div className="error text-danger">
                                                         {this.state.item_name_error}
                                                     </div>
                                                 </div>
@@ -514,11 +574,12 @@ class Invoice extends React.Component {
                                                         type="text"
                                                         className="form-control"
                                                         name="description"
+                                                        value={this.state.description}
                                                         onChange={this.handleChange}
                                                         id="description"
                                                         placeholder="Description"
                                                     />
-                                                    <div style={{ fontSize: 12, color: "red" }}>
+                                                    <div className="error text-danger">
                                                         {this.state.description_error}
                                                     </div>
                                                 </div>
@@ -529,11 +590,12 @@ class Invoice extends React.Component {
                                                         type="text"
                                                         className="form-control"
                                                         name="unit_cost"
+                                                        value={this.state.unit_cost}
                                                         onChange={this.handleChange}
                                                         id="unit_cost"
                                                         placeholder="Enter Unit Cost"
                                                     />
-                                                    <div style={{ fontSize: 12, color: "red" }}>
+                                                    <div className="error text-danger">
                                                         {this.state.unit_cost_error}
                                                     </div>
                                                 </div>
@@ -544,11 +606,12 @@ class Invoice extends React.Component {
                                                         type="text"
                                                         className="form-control"
                                                         name="qty"
+                                                        value={this.state.qty}
                                                         onChange={this.handleChange}
                                                         id="qty"
                                                         placeholder="Enter Qty/Hr Rate"
                                                     />
-                                                    <div style={{ fontSize: 12, color: "red" }}>
+                                                    <div className="error text-danger">
                                                         {this.state.qty_error}
                                                     </div>
                                                 </div>
@@ -559,20 +622,29 @@ class Invoice extends React.Component {
                                                         type="text"
                                                         className="form-control"
                                                         name="amount"
+                                                        value={this.state.amount}
                                                         onChange={this.handleChange}
                                                         id="amount"
                                                         placeholder="Enter Amount"
                                                     />
-                                                    <div style={{ fontSize: 12, color: "red" }}>
+                                                    <div className="error text-danger">
                                                         {this.state.amount_error}
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className="error text-danger">
+                                                {this.state.item_are_required}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-lg-12 addmore">
+                                            <a className="btn add-more" onClick={this.state.isEdit == false ? (this.add) : (this.updateRow.bind(this))} style={{ color: '#fff' }}><i className="fas fa-plus"></i>{this.state.isEdit == true ? 'Update Row' : 'Add More'}</a>
                                         </div>
                                     </div>
                                     {
                                         this.state.items.length > 0 ? (
-                                            <div>
+                                            <div className="noError">
                                                 {
                                                     this.state.items.map((data, index) =>
                                                         <div id="biller" key={index}>
@@ -582,14 +654,9 @@ class Invoice extends React.Component {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            name="item_name"
-                                                                            onChange={this.handleChange}
-                                                                            id="item_name"
-                                                                            placeholder="Your item Name"
+                                                                            disabled="disabled"
+                                                                            value={data.item_name}
                                                                         />
-                                                                        <div style={{ fontSize: 12, color: "red" }}>
-                                                                            {this.state.item_name_error}
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-md-6 col-lg-6 invoice_form">
@@ -597,12 +664,9 @@ class Invoice extends React.Component {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            name="description"
-                                                                            onChange={this.handleChange}
-                                                                            id="description"
-                                                                            placeholder="Description"
+                                                                            disabled="disabled"
+                                                                            value={data.description}
                                                                         />
-
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-md-4 col-lg-4 invoice_form">
@@ -610,14 +674,9 @@ class Invoice extends React.Component {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            name="unit_cost"
-                                                                            onChange={this.handleChange}
-                                                                            id="unit_cost"
-                                                                            placeholder="Enter Unit Cost"
+                                                                            disabled="disabled"
+                                                                            value={data.unit_cost}
                                                                         />
-                                                                        <div style={{ fontSize: 12, color: "red" }}>
-                                                                            {this.state.unit_cost_error}
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-md-4 col-lg-4 invoice_form">
@@ -625,14 +684,9 @@ class Invoice extends React.Component {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            name="qty"
-                                                                            onChange={this.handleChange}
-                                                                            id="qty"
-                                                                            placeholder="Enter Qty/Hr Rate"
+                                                                            disabled="disabled"
+                                                                            value={data.qty}
                                                                         />
-                                                                        <div style={{ fontSize: 12, color: "red" }}>
-                                                                            {this.state.qty_error}
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-md-4 col-lg-4 invoice_form">
@@ -640,15 +694,13 @@ class Invoice extends React.Component {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            name="amount"
-                                                                            onChange={this.handleChange}
-                                                                            id="amount"
-                                                                            placeholder="Enter Amount"
+                                                                            disabled="disabled"
+                                                                            value={data.amount}
                                                                         />
-                                                                        <div style={{ fontSize: 12, color: "red" }}>
-                                                                            {this.state.amount_error}
-                                                                        </div>
                                                                     </div>
+                                                                </div>
+                                                                <div className="col-md-4 col-lg-4 invoice_form mb-3">
+                                                                    <button type="button" className="btn btn-sm btn-primary" onClick={(e) => this.editRow(data, index)}>Edit Row</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -660,11 +712,8 @@ class Invoice extends React.Component {
                                                 null
                                             )
                                     }
-                                    <div className="row">
-                                        <div className="col-lg-12 addmore">
-                                            <a className="btn add-more" onClick={this.add} style={{ color: '#fff' }}><i className="fas fa-plus"></i>Add More</a>
-                                        </div>
-                                    </div>
+
+
                                     <div className="row">
                                         <div className="col-md-4 col-lg-4 invoice_form">
                                             <div className="form-group">
@@ -704,7 +753,7 @@ class Invoice extends React.Component {
                                             </button>
                                         </div>
                                     </div>
-                                    <Modal isOpen={this.state.modal}>
+                                    <Modal style={{ marginLeft: '148px' }} isOpen={this.state.modal}>
                                         <ModalHeader>INVOICE</ModalHeader>
                                         <ModalBody id="page" style={{ color: 'black', background: 'white' }}>
 

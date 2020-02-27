@@ -1,0 +1,131 @@
+body {
+	font-family: 'Poppins', sans-serif !important;	
+}
+/*-- Start Header --*/
+.bg_invoice {
+    background-color: #F4F3EF;
+    padding: 30px 40px 30px 40px;
+}
+.bg-header {
+    
+}
+.logo {
+    margin-bottom: 10px;
+}
+.logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #002a54;
+}
+.logo h2 {
+    font-size: 27px;
+    font-weight: 600;
+}
+.address h2 {
+    margin-top: -8px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #002a54;
+}
+.address h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.slip {
+    border-top: 2px solid #002a54; 
+    border-bottom: 2px solid #002a54;
+    margin-top: 20px;
+}
+.slip h5 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*-- End Header --*/
+
+/*-- Start Salary Slip --*/
+.salary_slip {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slip_title h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.slip_detail h5 {
+    font-size: 18px;
+}
+/*-- End Salary Slip --*/
+
+/*-- Start Salary Amount --*/
+.earning_label {
+    border: 2px solid #002a54;
+}
+.earning_label h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.earning_value {
+    border-left: 2px solid #002a54;
+    border-right: 2px solid #002a54;
+    height: 250px;
+}
+.earning_value h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.deductions_heading {
+    border-left: 2px solid #002a54;
+}
+.amount_heading {
+    border-left:2px solid #002a54;
+    border-right: 2px solid #002a54;
+}
+.pf_heading {
+    border-left: 2px solid #002a54;
+    height: 250px;
+}
+.pf_total_heading {
+    border-left: 2px solid #002a54;
+}
+.ml {
+    margin-left: -28px;
+}
+.net_pay {
+    border-left:2px solid #002a54;
+    border-right: 2px solid #002a54;
+    border-bottom: 2px solid #002a54;
+}
+.net_pay h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.signature {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 15px;
+}
+/*-- End Salary Amount --*/ 
+
+/*-- Start Footer --*/
+.footer {
+   /* border-top:2px solid #002a54;*/
+    /*margin-top: 20px;*/
+    text-align: center;
+    padding-top: 20px;
+    color: #002a54;
+}
+.footer h5 {
+    margin-bottom: 0px;
+}
+/*-- End Footer --*/

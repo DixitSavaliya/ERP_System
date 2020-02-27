@@ -1,0 +1,247 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'class-1',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"","description":"","unit_cost":"","qty":"","amount":""}]',
+        '12',
+        '123',
+        '2020-02-27'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200270'
+                        where id = 70
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 70
+                    limit 1
+Delete  SocketId:6CAeK_aldCGbORkxAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:Jgtk0THzV_hEoBnoAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:A2AJRdrP8UGgbYr6AAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'rkweb',
+        '413,anmol complex',
+        '413,anmol complex',
+        '[{"item_name":"camera-mobile","unit_cost":"1500","qty":"3","amount":"1500","description":"demo camera-mobile"},{"item_name":"camera-mobile","unit_cost":"1500","qty":"1","amount":"1500","description":"demo camera-mobile"}]',
+        '150',
+        '123',
+        '2020-02-27'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200271'
+                        where id = 71
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 71
+                    limit 1
+Delete  SocketId:NfLGTiLnpkl5fnzxAAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'rkweb',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera","unit_cost":"150000","qty":"8","amount":"150000","description":"demo camera-mobile"},{"item_name":"camera-mobile","unit_cost":"150000","qty":"3","amount":"150000","description":"demo camera"}]',
+        '150',
+        '123',
+        '2020-02-27'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200272'
+                        where id = 72
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 72
+                    limit 1
+Delete  SocketId:K6VC1IVwXWZgtB0zAAAE
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'rkweb',
+        '413,anmol complex',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera-mobile","unit_cost":"1500","qty":"2","amount":"1500","description":"demo camera-mobile"},{"item_name":"camera","unit_cost":"150000","qty":"7","amount":"150000","description":"demo camera-mobile"}]',
+        'null',
+        'null',
+        '2020-02-27'
+    )
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'rkweb',
+        '413,anmol complex',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera-mobile","unit_cost":"1500","qty":"2","amount":"1500","description":"demo camera-mobile"},{"item_name":"camera","unit_cost":"150000","qty":"7","amount":"150000","description":"demo camera-mobile"}]',
+        '120',
+        '123',
+        '2020-02-27'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200273'
+                        where id = 73
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 73
+                    limit 1
+Delete  SocketId:VJcssIHUEwDpBT7dAAAF
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:lQEzSAk9Hp8zapcwAAAG
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:c41ixo8RFPksGDjEAAAH
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:u3RWM6IWY4RUljHLAAAI
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:pC4PL-Rg0FyGRsSsAAAJ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:k_o5p835qufpgDQXAAAK
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:JJ3fv2YnuiBNu_GjAAAL
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:PEQP060eIxbSJzmpAAAM
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:qqOLfEoq-rbhkb2pAAAN
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:FDogtGA-HCdVtMpoAAAO
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:8Panz2HpQVelRIluAAAP
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:zpQDGlQU0mBZ2Ys7AAAQ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'hghfhf',
+        'ghfgfg',
+        'null',
+        '[{"item_name":"","description":"","unit_cost":"","qty":"","amount":""}]',
+        'null',
+        'null',
+        '2020-02-27'
+    )
+Delete  SocketId:qfFKpAVrMw2O2rfOAAAR
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:nWxIEzQ3irfk732rAAAS
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:NJSdG3FK7AVRwDRXAAAT
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:iQmWgk37_H5NocquAAAU
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:acKYuCDLyDF53p2oAAAV
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false

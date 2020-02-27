@@ -272,13 +272,6 @@ body {
     outline: 0;
 }
 
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 500px;
-        /* margin: 4.75rem auto; */
-        margin-left: 198px !important;
-    }
-}
 
 .modal-body {
     position: relative;
@@ -286,3 +279,9 @@ body {
     padding: 3rem !important;
 }
 /*-- End Footer --*/
+.error.text-danger {
+    font-size: 12px;
+}
+.noError .error.text-danger{
+    display: none !important;
+}

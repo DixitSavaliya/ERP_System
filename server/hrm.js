@@ -350,6 +350,7 @@ var userRoleApi = require('./controllers/user_role_controller');
 var employeeApi = require('./controllers/employee_controller');
 var documentApi = require('./controllers/document_controller');
 var invoiceApi = require('./controllers/invoice_controller');
+var salarySlipApi = require('./controllers/salaryslip_controller');
 
 
 // controller binding
@@ -361,6 +362,7 @@ app.use('/UserRole', userRoleApi);
 app.use('/Employee', employeeApi);
 app.use('/Document', documentApi);
 app.use('/Invoice', invoiceApi);
+app.use('/SalarySlip', salarySlipApi);
 app.use('/', require('./controllers/socket_controller'));
 
 

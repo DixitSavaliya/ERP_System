@@ -194,3 +194,215 @@ body {
         margin: 30px 0px;
     }
 }	
+
+/*-- Start Header --*/
+.invoice_form .form-control {
+    width: 100%;
+    height: calc(1.0em + 1.5rem + 2px);
+    padding: .375rem .75rem;
+    background-color: #fff;
+    border: 2px solid #d4d3d3;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.invoice_form .form-control:focus {
+    background-color: #fff;
+    border-color: #d9d9d9;
+    outline: 0;
+    box-shadow: -4px 0px 7px 4px rgb(244, 247, 249);
+}
+.bg-mainManu .modal-header h5 {
+    margin-bottom: 0px;
+}
+.bg-mainManu .modal-header .close {
+    font-size: 24px;
+    font-weight: 500;
+}    
+.submit .btn {
+    text-decoration: none;
+    background-color: #002a54;
+    border:2px solid #002a54;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-top: 0px;
+}
+.submit .btn:hover {
+    background: #002a54;
+    color: #fff !important;
+    border: 2px solid #002a54 !important;
+    outline: none;
+}
+.submit .btn.focus, .btn:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+.error{
+    color: red;
+}
+
+@media(max-width: 1600px){
+    
+}
+@media(max-width: 1200px){
+    
+}
+@media(max-width: 992px) {
+
+} 
+@media(max-width: 768px) {
+    
+}	
+@media(max-width: 568px) {
+    
+}	
+
+/*-- Start Header --*/
+.bg_invoice {
+    background-color: #F4F3EF;
+    padding: 30px 40px 30px 40px;
+}
+.bg-header {
+    
+}
+.logo {
+    margin-bottom: 10px;
+}
+.logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #002a54;
+}
+.logo h2 {
+    font-size: 27px;
+    font-weight: 600;
+}
+.address h2 {
+    margin-top: -8px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #002a54;
+}
+.address h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.slip {
+    border-top: 2px solid #002a54; 
+    border-bottom: 2px solid #002a54;
+    margin-top: 20px;
+}
+.slip h5 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*-- End Header --*/
+
+/*-- Start Salary Slip --*/
+.salary_slip {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slip_title h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.slip_detail h5 {
+    font-size: 18px;
+}
+/*-- End Salary Slip --*/
+
+/*-- Start Salary Amount --*/
+.earning_label {
+    border: 2px solid #002a54;
+}
+.earning_label h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.earning_value {
+    border-left: 2px solid #002a54;
+    border-right: 2px solid #002a54;
+    height: 250px;
+}
+.earning_value h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.deductions_heading {
+    border-left: 2px solid #002a54;
+}
+.amount_heading {
+    border-left:2px solid #002a54;
+    border-right: 2px solid #002a54;
+}
+.pf_heading {
+    border-left: 2px solid #002a54;
+    height: 250px;
+}
+.pf_total_heading {
+    border-left: 2px solid #002a54;
+}
+.ml {
+    margin-left: -28px;
+}
+.net_pay {
+    border-left:2px solid #002a54;
+    border-right: 2px solid #002a54;
+    border-bottom: 2px solid #002a54;
+}
+.net_pay h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.signature {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 15px;
+}
+/*-- End Salary Amount --*/ 
+
+/*-- Start Footer --*/
+.footer {
+   /* border-top:2px solid #002a54;*/
+    /*margin-top: 20px;*/
+    text-align: center;
+    padding-top: 20px;
+    color: #002a54;
+}
+.footer h5 {
+    margin-bottom: 0px;
+}
+
+.modal-dialog {
+    max-width: 500px;
+    /* margin: 4.75rem auto; */
+    margin-left: 11px !important;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog .m {
+        max-width: 500px;
+        /* margin: 4.75rem auto; */
+        margin-left: 198px !important;
+    }
+}
+/*-- End Footer --*/
