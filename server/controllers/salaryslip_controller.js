@@ -18,17 +18,14 @@ function createSalarySlip(req, res) {
     var user = {
         id: req.body.id ? req.body.id : '',
         employee_name : insertArray ? insertArray : '',
-        month : req.body.month ? req.body.month : '',
-        working_day : req.body.working_day ? req.body.working_day : ''
+        month : req.body.month ? req.body.month : ''
     };
     var sql = `insert into salaryslip_master(
         employee_name,
-        month,
-        working_day
+        month
     ) values (
         '`+ user.employee_name + `',
-        '`+ user.month + `',
-        '`+ user.working_day + `'
+        '`+ user.month + `'
     )`;
     console.log("createSalarySlip sql ---------------> " + sql)
     pool.getConnection(function (err2, con2) {

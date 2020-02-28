@@ -81,9 +81,13 @@ class Dashboard extends Component {
     this.toggle = this.toggle.bind(this);
   }
 
-  handleChange(date) {
+  handleChange(date, date1, date2) {
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const month = months[date2];
+    const monthdate = month + ' ' + date1;
     this.setState({
-      month: this.state.month = date
+      month: this.state.month = monthdate
     })
   }
 
@@ -172,7 +176,6 @@ class Dashboard extends Component {
     this.setState({
       selectEmployee: this.state.selectEmployee = arrayss
     })
-    console.log("select employee", this.state.selectEmployee);
     let _id = event;
     this.setState({
       employee_id: this.state.employee_id = _id
@@ -218,7 +221,6 @@ class Dashboard extends Component {
   validate() {
     let items_error = "";
     let month_error = "";
-    let working_day_error = "";
 
     if (!this.state.items) {
       items_error = "please select employee name";
@@ -228,13 +230,9 @@ class Dashboard extends Component {
       month_error = "please select month";
     }
 
-    if (!this.state.working_day) {
-      working_day_error = "please enter working day";
-    }
 
-
-    if (items_error || month_error || working_day_error) {
-      this.setState({ items_error, month_error, working_day_error });
+    if (items_error || month_error) {
+      this.setState({ items_error, month_error });
       return false;
     }
     return true;
@@ -246,8 +244,7 @@ class Dashboard extends Component {
     if (isValid) {
       this.setState({
         items_error: "",
-        month_error: "",
-        working_day_error: ""
+        month_error: ""
       })
 
       if (this.state.items.length > 0 && this.state.month) {
@@ -262,10 +259,9 @@ class Dashboard extends Component {
           .then(response => {
             if (response.data.status == 1) {
               this.setState({
-                items: this.state.items = [],
-                month:this.state.month = "",
-                working_day:this.state.working_day = ""
+                month: this.state.month = ""
               })
+              // $('#myModal').modal('hide');
               this.state.items = [];
               document.getElementById('searchInput').value = '';
               this.setState({
@@ -293,7 +289,7 @@ class Dashboard extends Component {
             console.log("error", error);
           });
       } else {
-        Swal.fire("PLease Enter Field First!", "", "warning");
+        Swal.fire("PLease Search Employee Name First!", "", "warning");
       }
     }
   }
@@ -393,25 +389,12 @@ class Dashboard extends Component {
                                 <div className="form-group">
                                   <MonthPickerInput
                                     dateFormat="mm/yyyy"
-                                    onChange={(maskedValue) => this.handleChange(maskedValue)}
+                                    monthFormat="short"
+                                    onChange={(maskedValue, selectedYear, selectedMonth) => this.handleChange(maskedValue, selectedYear, selectedMonth)}
+                                    closeOnSelect
                                   />
                                   <div style={{ fontSize: 12, color: "red" }}>
                                     {this.state.month_error}
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-md-12 col-lg-12 invoice_form">
-                                <div className="form-group">
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    name="working_day"
-                                    id="working_day"
-                                    onChange={this.handleChangeEvent}
-                                    placeholder="Enter Employee Month Working Day"
-                                  />
-                                  <div style={{ fontSize: 12, color: "red" }}>
-                                    {this.state.working_day_error}
                                   </div>
                                 </div>
                               </div>

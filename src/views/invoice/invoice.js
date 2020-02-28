@@ -116,7 +116,19 @@ class Invoice extends React.Component {
     }
 
     toggle() {
-        this.setState({ modal: !this.state.modal });
+        this.setState({
+            modal: !this.state.modal,
+            item_name: this.state.item_name = '',
+            unit_cost: this.state.unit_cost = '',
+            qty: this.state.qty = '',
+            amount: this.state.amount = '',
+            description: this.state.description = '',
+            biller_name: this.state.biller_name = '',
+            address_1: this.state.address_1 = '',
+            address_2: this.state.address_2 = '',
+            tax: this.state.tax = '',
+            gst_number: this.state.gst_number = ''
+        });
     }
 
     validate() {
@@ -132,12 +144,16 @@ class Invoice extends React.Component {
             address_1_error = "please enter address";
         }
 
-        // if (this.state.items.length == 0) {
-        //     item_are_required = 'items are required';
-        // }
+        if (this.state.item_name && this.state.unit_cost && this.state.qty && this.state.amount) {
+            this.setState({
+                item_are_required: this.state.item_are_required = ""
+            })
+        } else if (this.state.items.length == 0) {
+            item_are_required = 'items are required';
+        }
 
-        if (biller_name_error || address_1_error) {
-            this.setState({ biller_name_error, address_1_error });
+        if (biller_name_error || address_1_error || item_are_required) {
+            this.setState({ biller_name_error, address_1_error, item_are_required });
             return false;
         }
         return true;
@@ -230,7 +246,12 @@ class Invoice extends React.Component {
                                     })
                                     var currentDate = this.state.created_date;
                                     var date = currentDate.getDate() + '/' + (currentDate.getMonth() + 1) + '/' + currentDate.getFullYear();
-                                    var total = +this.state.subtotal + +res.response.data.tax;
+                                    if (res.response.data.tax == "null") {
+                                        var taxitem = 0;
+                                        var total = +this.state.subtotal + +taxitem;
+                                    } else {
+                                        var total = +this.state.subtotal + +res.response.data.tax;
+                                    }
                                     this.setState({
                                         main_total: this.state.main_total = total
                                     })
@@ -247,7 +268,7 @@ class Invoice extends React.Component {
                                             invoice_number: this.state.invoice_number = res.response.data.invoice_number,
                                             gst_number: this.state.gst_number = res.response.data.gst_number,
                                             created_date: this.state.created_date = date,
-                                            tax: this.state.tax = res.response.data.tax
+                                            tax: this.state.tax = res.response.data.tax == "null" ? 0 : res.response.data.tax
                                         })
                                         this.setState({
                                             modal: this.state.modal = true
@@ -311,7 +332,12 @@ class Invoice extends React.Component {
                                     })
                                     var currentDate = this.state.created_date;
                                     var date = currentDate.getDate() + '/' + (currentDate.getMonth() + 1) + '/' + currentDate.getFullYear();
-                                    var total = +this.state.subtotal + +res.response.data.tax;
+                                    if (res.response.data.tax == "null") {
+                                        var taxitem = 0;
+                                        var total = +this.state.subtotal + +taxitem;
+                                    } else {
+                                        var total = +this.state.subtotal + +res.response.data.tax;
+                                    }
                                     this.setState({
                                         main_total: this.state.main_total = total
                                     })
@@ -328,7 +354,7 @@ class Invoice extends React.Component {
                                             invoice_number: this.state.invoice_number = res.response.data.invoice_number,
                                             gst_number: this.state.gst_number = res.response.data.gst_number,
                                             created_date: this.state.created_date = date,
-                                            tax: this.state.tax = res.response.data.tax
+                                            tax: this.state.tax = res.response.data.tax == "null" ? 0 : res.response.data.tax
                                         })
                                         this.setState({
                                             modal: this.state.modal = true
@@ -372,6 +398,18 @@ class Invoice extends React.Component {
             imageType: 'image/jpeg',
             output: 'invoice.pdf'
         });
+        this.setState({
+            item_name: this.state.item_name = '',
+            unit_cost: this.state.unit_cost = '',
+            qty: this.state.qty = '',
+            amount: this.state.amount = '',
+            description: this.state.description = '',
+            biller_name: this.state.biller_name = '',
+            address_1: this.state.address_1 = '',
+            address_2: this.state.address_2 = '',
+            tax: this.state.tax = '',
+            gst_number: this.state.gst_number = ''
+        })
         // const input = document.getElementById('page');
         // html2canvas(input)
         //     .then((canvas) => {
@@ -387,6 +425,9 @@ class Invoice extends React.Component {
     async add() {
         const isValid = await this.validate1();
         if (isValid) {
+            this.setState({
+                item_are_required: this.state.item_are_required = ""
+            })
 
             var itemArray = {
                 item_name: this.state.item_name,
@@ -510,6 +551,7 @@ class Invoice extends React.Component {
                                                     type="text"
                                                     className="form-control"
                                                     name="biller_name"
+                                                    value={this.state.biller_name}
                                                     onChange={this.handleChange}
                                                     id="name"
                                                     placeholder="Enter Biller Name"
@@ -525,6 +567,7 @@ class Invoice extends React.Component {
                                                     type="text"
                                                     className="form-control"
                                                     name="address_1"
+                                                    value={this.state.address_1}
                                                     onChange={this.handleChange}
                                                     id="address"
                                                     placeholder="Enter Address"
@@ -540,6 +583,7 @@ class Invoice extends React.Component {
                                                     type="text"
                                                     className="form-control"
                                                     name="address_2"
+                                                    value={this.state.address_2}
                                                     onChange={this.handleChange}
                                                     id=""
                                                     placeholder="Enter Address"
@@ -721,6 +765,7 @@ class Invoice extends React.Component {
                                                     type="text"
                                                     className="form-control"
                                                     name="tax"
+                                                    value={this.state.tax}
                                                     onChange={this.handleChange}
                                                     id=""
                                                     placeholder="Enter Tax %"
@@ -733,6 +778,7 @@ class Invoice extends React.Component {
                                                     type="text"
                                                     className="form-control"
                                                     name="gst_number"
+                                                    value={this.state.gst_number}
                                                     onChange={this.handleChange}
                                                     id=""
                                                     placeholder="Enter GST Number"
@@ -832,7 +878,6 @@ class Invoice extends React.Component {
                                                             )
                                                         }
                                                     </div>
-
                                                 ) : (
                                                         null
                                                     )

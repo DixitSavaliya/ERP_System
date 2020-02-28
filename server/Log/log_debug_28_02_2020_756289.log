@@ -1,0 +1,551 @@
+socket server started on port 4000
+Listening HTTP on port 3000
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'class-1',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera","description":"demo camera","unit_cost":"150000","qty":"1","amount":"150000"}]',
+        '12',
+        '123',
+        '2020-02-28'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200237'
+                        where id = 37
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 37
+                    limit 1
+Delete  SocketId:hb9cfNIJhVYSPTqpAAAA
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'rkweb',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera-mobile","description":"demo camera-mobile","unit_cost":"150000","qty":"1","amount":"150000"}]',
+        '12',
+        '123',
+        '2020-02-28'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200238'
+                        where id = 38
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 38
+                    limit 1
+Delete  SocketId:xIwAJdkLa14jHNldAAAB
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:V5L3bXnUWDOWqCxdAAAC
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'class-1',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera-mobile","description":"demo camera-mobile","unit_cost":"150000","qty":"1","amount":"150000"}]',
+        '12',
+        '123',
+        '2020-02-28'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200239'
+                        where id = 39
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 39
+                    limit 1
+Delete  SocketId:ThMTFIXiXbE1zZr0AAAD
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'class-1',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera","unit_cost":"1500","qty":"3","amount":"1500","description":"demo camera"},{"item_name":"camera-mobile","unit_cost":"150000","qty":"1","amount":"1500","description":"demo camera-mobile"}]',
+        '150',
+        '123',
+        '2020-02-28'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200240'
+                        where id = 40
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 40
+                    limit 1
+Delete  SocketId:PDx2sXuWlrbJZsxnAAAE
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:pdrjadWPyeTNwuhwAAAF
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:VOjE2AYvPd1vk9FiAAAG
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:net0MlHnYue4uNQHAAAH
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:8SO1zDDfhtFehNbLAAAI
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:uqfixZR219za-E88AAAJ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Invoice/createInvoice
+required check ------------------------->  false
+createInvoice sql ---------------> insert into invoice_master(
+        biller_name,
+        address_1,
+        address_2,
+        items,
+        tax,
+        gst_number,
+        created_date
+    ) values (
+        'class-1',
+        '413,anmol complex,360001',
+        '413,anmol complex,360001',
+        '[{"item_name":"camera-mobile","unit_cost":"1500","qty":"1","amount":"150000","description":"demo camera"},{"item_name":"camera-mobile","unit_cost":"150000","qty":"3","amount":"150000","description":"demo camera-mobile"},{"item_name":"camera-mobile","unit_cost":"150000","qty":"1","amount":"150000","description":"demo camera-mobile"},{"item_name":"camera","unit_cost":"1500","qty":"3","amount":"1500","description":"demo camera"},{"item_name":"camera-mobile","unit_cost":"150000","qty":"2","amount":"150000","description":"demo camera-mobile"},{"item_name":"camera","unit_cost":"1500","qty":"1","amount":"1500","description":"demo camera"}]',
+        '150',
+        '123',
+        '2020-02-28'
+    )
+setSecretKey sql ==========>  update invoice_master set invoice_number = 'RK20200241'
+                        where id = 41
+requested_plain_url ==>    /Invoice/getInvoice
+required check ------------------------->  false
+getDocument sql ===>  select 
+                        c.*
+                    from invoice_master as c 
+                    where 
+                        c.id= 41
+                    limit 1
+Delete  SocketId:NDNZlYyM4f_HQR9NAAAK
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:wXIpcF8mURY8VUvsAAAL
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:3PSqcoWMxEJmmJ2CAAAM
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:c2b1lOcir9aYODk4AAAN
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:3UjxeGaqjtyvE1auAAAO
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:jCjODOBiqVX7ok5_AAAP
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:A2g8G-mDi_ctflwQAAAQ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:AgktIrGXDijIj9zcAAAR
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:tLZJ1c6vqkvxBC0GAAAS
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:6DDcXtDOA1lfn2Y6AAAT
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:_JNT3OS0XjuSrDLwAAAU
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:7bMb0qprGMPRC7TnAAAV
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:GDYsRJcpMCi53WvPAAAW
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:KbCa62lc-Hg7JLqFAAAX
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:hx2-OOeNZuxoI6caAAAY
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:PWpM-NIGKaIMHNmcAAAZ
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:CKeAEAcEzNkYz-wbAAAa
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:Vox9QVHuXvYl74aXAAAb
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:-ZDaztVY8HFoElzNAAAc
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:9yTIxNuXMh1dbJ0kAAAd
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+Delete  SocketId:fnZWaZBG2cX0evO6AAAe
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+Delete  SocketId:ku7DKMrO44jRBW3tAAAf
+requested_plain_url ==>    /User/wddUpq.jpeg
+multimedia[(multimedia.length - 1)]jpeg
+required check ------------------------->  false
+requested_plain_url ==>    /Application/getAdvertiserAppHitCount
+required check ------------------------->  false
+getAdvertiserAppHitCount sql 
+  select 
+                        am.id,
+                        am.name,
+                        am.icon,
+                        am.banner,
+                        am.package,
+                        (select count(id) from application_hit_count where request_id = am.id) as total_count,
+                        (select count(id) from application_hit_count where request_id = am.id and cast(create_date as date) = '2020-02-28') as today_count
+                    from application_master as am
+                    where am.user_id = '38' 
+                    group by am.id
+                    order by am.name asc
