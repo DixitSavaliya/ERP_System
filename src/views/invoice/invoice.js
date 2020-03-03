@@ -757,7 +757,6 @@ class Invoice extends React.Component {
                                             )
                                     }
 
-
                                     <div className="row">
                                         <div className="col-md-4 col-lg-4 invoice_form">
                                             <div className="form-group">
