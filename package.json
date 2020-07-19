@@ -45,7 +45,7 @@
     "jspdf": "^1.4.1",
     "jspdf-html2canvas": "^1.1.0",
     "localforage": "^1.7.3",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "mdbreact": "^4.25.1",
     "moment": "^2.24.0",
     "react": "16.1.1",
