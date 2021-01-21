@@ -35,6 +35,6 @@
     "q": "^1.5.1",
     "redis": "^2.8.0",
     "rotating-file-stream": "^1.3.6",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.4.0"
   }
 }
