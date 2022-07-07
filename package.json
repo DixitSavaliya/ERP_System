@@ -47,7 +47,7 @@
     "localforage": "^1.7.3",
     "lodash": "^4.17.4",
     "mdbreact": "^4.25.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "16.1.1",
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-date-picker": "^5.1.0",
